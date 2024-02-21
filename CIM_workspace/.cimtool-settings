@@ -12,7 +12,7 @@ project:
       tool:merged_schema_path
               "" .
 
-<http://cimtoole.langdale.com.au/2009/project/Profiles/MainProfile.owl>
+<http://cimtoole.langdale.com.au/2009/project/Profiles/CimProfile.owl>
       tool:profile_envelope
               "Profile" ;
       tool:profile_namespace
