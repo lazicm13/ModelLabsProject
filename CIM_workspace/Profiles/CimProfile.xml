@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Catalog xmlns="http://langdale.com.au/2005/Message#"
+         xmlns:m="http://iec.ch/TC57/2007/profile#"
+         baseURI="http://iec.ch/TC57/2007/profile#"
+         name="Profile">
+   <ComplexType name="ACLineSegment"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment"
+                package="Wires"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.</Comment>
+      <Comment>For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.</Comment>
+      <SuperType name="Conductor"/>
+      <Domain type="Susceptance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Susceptance"
+              xstype="float"
+              name="b0ch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.b0ch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.</Comment>
+      </Domain>
+      <Domain type="Susceptance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Susceptance"
+              xstype="float"
+              name="bch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.bch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence shunt (charging) susceptance, uniformly distributed, of the entire line section.  This value represents the full charging over the full length of the line.</Comment>
+      </Domain>
+      <Domain type="Conductance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Conductance"
+              xstype="float"
+              name="g0ch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.g0ch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence shunt (charging) conductance, uniformly distributed, of the entire line section.</Comment>
+      </Domain>
+      <Domain type="Conductance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Conductance"
+              xstype="float"
+              name="gch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.gch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence shunt (charging) conductance, uniformly distributed, of the entire line section.</Comment>
+      </Domain>
+      <Domain type="Resistance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
+              xstype="float"
+              name="r"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.r"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence series resistance of the entire line section.</Comment>
+      </Domain>
+      <Domain type="Resistance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
+              xstype="float"
+              name="r0"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.r0"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence series resistance of the entire line section.</Comment>
+      </Domain>
+      <Domain type="Reactance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Reactance"
+              xstype="float"
+              name="x"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.x"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence series reactance of the entire line section.</Comment>
+      </Domain>
+      <Domain type="Reactance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Reactance"
+              xstype="float"
+              name="x0"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.x0"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence series reactance of the entire line section.</Comment>
+      </Domain>
+      <Reference type="PerLengthImpedance"
+                 name="PerLengthImpedance"
+                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment.PerLengthImpedance"
+                 minOccurs="0"
+                 maxOccurs="1">
+         <Comment>Per-length impedance of this line segment.</Comment>
+         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
+      </Reference>
+   </ComplexType>
+   <ComplexType name="ConductingEquipment"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#ConductingEquipment"
+                package="IES_Projects"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>The parts of the power system that are designed to carry current or that are conductively connected through terminals.</Comment>
+      <SuperType name="Equipment"/>
+   </ComplexType>
+   <ComplexType name="Conductor"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#Conductor"
+                package="Wires"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.</Comment>
+      <SuperType name="ConductingEquipment"/>
+      <Domain type="Length"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Length"
+              xstype="float"
+              name="length"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#Conductor.length"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Segment length for calculating line section capabilities</Comment>
+      </Domain>
+   </ComplexType>
+   <ComplexType name="ConnectivityNodeContainer"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#ConnectivityNodeContainer"
+                package="IES_Projects"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A base class for all objects that may contain connectivity nodes or topological nodes.</Comment>
+      <SuperType name="PowerSystemResource"/>
+   </ComplexType>
+   <ComplexType name="DCLineSegment"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#DCLineSegment"
+                package="Wires"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.</Comment>
+      <SuperType name="Conductor"/>
+      <Domain type="Inductance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Inductance"
+              xstype="float"
+              name="dcSegmentInductance"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#DCLineSegment.dcSegmentInductance"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Inductance of the DC line segment.</Comment>
+      </Domain>
+      <Domain type="Resistance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
+              xstype="float"
+              name="dcSegmentResistance"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#DCLineSegment.dcSegmentResistance"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Resistance of the DC line segment.</Comment>
+      </Domain>
+   </ComplexType>
+   <ComplexType name="Equipment"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#Equipment"
+                package="IES_Projects"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>The parts of a power system that are physical devices, electronic or mechanical.</Comment>
+      <SuperType name="PowerSystemResource"/>
+      <Simple dataType="http://www.w3.org/2001/XMLSchema#boolean"
+              xstype="boolean"
+              name="aggregate"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#Equipment.aggregate"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or sychronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program.</Comment>
+      </Simple>
+      <Simple dataType="http://www.w3.org/2001/XMLSchema#boolean"
+              xstype="boolean"
+              name="normallyInService"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#Equipment.normallyInService"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>If true, the equipment is normally in service.</Comment>
+      </Simple>
+      <Reference type="EquipmentContainer"
+                 name="EquipmentContainer"
+                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#Equipment.EquipmentContainer"
+                 minOccurs="0"
+                 maxOccurs="1">
+         <Comment>Container of this equipment.</Comment>
+         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
+      </Reference>
+   </ComplexType>
+   <ComplexType name="EquipmentContainer"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#EquipmentContainer"
+                package="Core"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A modeling construct to provide a root class for containing equipment.</Comment>
+      <SuperType name="ConnectivityNodeContainer"/>
+      <Reference type="Equipment"
+                 name="Equipments"
+                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#EquipmentContainer.Equipments"
+                 minOccurs="0"
+                 maxOccurs="unbounded">
+         <Comment>Contained equipment.</Comment>
+         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
+      </Reference>
+   </ComplexType>
+   <ComplexType name="IdentifiedObject"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject"
+                package="Core"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>This is a root class to provide common identification for all classes needing identification and naming attributes.</Comment>
+      <Simple dataType="http://www.w3.org/2001/XMLSchema#string"
+              xstype="string"
+              name="mRID"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.mRID"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context.</Comment>
+         <Comment>Global uniqeness is easily achived by using a UUID for the mRID. It is strongly recommended to do this.</Comment>
+         <Comment>For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</Comment>
+      </Simple>
+      <Simple dataType="http://www.w3.org/2001/XMLSchema#string"
+              xstype="string"
+              name="aliasName"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.aliasName"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.</Comment>
+         <Comment>The attribute aliasName is retained because of backwards compatibility between CIM relases. It is however recommended to replace aliasName with the Name class as aliasName is planned for retirement at a future time.</Comment>
+      </Simple>
+      <Simple dataType="http://www.w3.org/2001/XMLSchema#string"
+              xstype="string"
+              name="name"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject.name"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>The name is any free human readable and possibly non unique text naming the object.</Comment>
+      </Simple>
+   </ComplexType>
+   <ComplexType name="Line"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#Line"
+                package="Wires"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>Contains equipment beyond a substation belonging to a power transmission line.</Comment>
+      <SuperType name="EquipmentContainer"/>
+      <Reference type="SubGeographicalRegion"
+                 name="Region"
+                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#Line.Region"
+                 minOccurs="0"
+                 maxOccurs="1">
+         <Comment>The sub-geographical region of the line.</Comment>
+         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
+      </Reference>
+   </ComplexType>
+   <ComplexType name="PerLengthImpedance"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthImpedance"
+                package="IES_Projects"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>Common type for per-length impedance electrical catalogues.</Comment>
+      <SuperType name="IdentifiedObject"/>
+      <Reference type="ACLineSegment"
+                 name="ACLineSegments"
+                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthImpedance.ACLineSegments"
+                 minOccurs="0"
+                 maxOccurs="unbounded">
+         <Comment>All line segments described by this per-length impedance.</Comment>
+         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
+      </Reference>
+   </ComplexType>
+   <ComplexType name="PerLengthSequenceImpedance"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance"
+                package="IES_Projects"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>Sequence impedance and admittance parameters per unit length, for transposed lines of 1, 2, or 3 phases. For 1-phase lines, define x=x0=xself. For 2-phase lines, define x=xs-xm and x0=xs+xm.</Comment>
+      <SuperType name="PerLengthImpedance"/>
+      <Domain type="SusceptancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#SusceptancePerLength"
+              xstype="float"
+              name="b0ch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.b0ch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence shunt (charging) susceptance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="SusceptancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#SusceptancePerLength"
+              xstype="float"
+              name="bch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.bch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence shunt (charging) susceptance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="ConductancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ConductancePerLength"
+              xstype="float"
+              name="g0ch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.g0ch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence shunt (charging) conductance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="ConductancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ConductancePerLength"
+              xstype="float"
+              name="gch"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.gch"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence shunt (charging) conductance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="ResistancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ResistancePerLength"
+              xstype="float"
+              name="r"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.r"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence series resistance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="ResistancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ResistancePerLength"
+              xstype="float"
+              name="r0"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.r0"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence series resistance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="ReactancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ReactancePerLength"
+              xstype="float"
+              name="x"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.x"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence series reactance, per unit of length.</Comment>
+      </Domain>
+      <Domain type="ReactancePerLength"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ReactancePerLength"
+              xstype="float"
+              name="x0"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance.x0"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence series reactance, per unit of length.</Comment>
+      </Domain>
+   </ComplexType>
+   <ComplexType name="PowerSystemResource"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PowerSystemResource"
+                package="Core"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.</Comment>
+      <SuperType name="IdentifiedObject"/>
+   </ComplexType>
+   <ComplexType name="SeriesCompensator"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator"
+                package="IES_Projects"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device.</Comment>
+      <SuperType name="ConductingEquipment"/>
+      <Domain type="Resistance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
+              xstype="float"
+              name="r"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator.r"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence resistance.</Comment>
+      </Domain>
+      <Domain type="Resistance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
+              xstype="float"
+              name="r0"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator.r0"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence resistance.</Comment>
+      </Domain>
+      <Domain type="Reactance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Reactance"
+              xstype="float"
+              name="x"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator.x"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Positive sequence reactance.</Comment>
+      </Domain>
+      <Domain type="Reactance"
+              dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Reactance"
+              xstype="float"
+              name="x0"
+              baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator.x0"
+              minOccurs="0"
+              maxOccurs="1">
+         <Comment>Zero sequence reactance.</Comment>
+      </Domain>
+   </ComplexType>
+   <ComplexType name="SubGeographicalRegion"
+                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion"
+                package="Core"
+                minOccurs="0"
+                maxOccurs="unbounded">
+      <Comment>A subset of a geographical region of a power system network model.</Comment>
+      <SuperType name="IdentifiedObject"/>
+      <Reference type="Line"
+                 name="Lines"
+                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion.Lines"
+                 minOccurs="0"
+                 maxOccurs="unbounded">
+         <Comment>The lines within the sub-geographical region.</Comment>
+         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
+      </Reference>
+   </ComplexType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Inductance"
+               name="Inductance"
+               xstype="float">
+      <Comment>Inductive part of reactance (imaginary part of impedance), at rated frequency.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ResistancePerLength"
+               name="ResistancePerLength"
+               xstype="float">
+      <Comment>Resistance (real part of impedance) per unit of length.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
+               name="Resistance"
+               xstype="float">
+      <Comment>Resistance (real part of impedance).</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ConductancePerLength"
+               name="ConductancePerLength"
+               xstype="float">
+      <Comment>Real part of admittance per unit of length.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Length"
+               name="Length"
+               xstype="float">
+      <Comment>Unit of length. Never negative.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#ReactancePerLength"
+               name="ReactancePerLength"
+               xstype="float">
+      <Comment>Reactance (imaginary part of impedance) per unit of length, at rated frequency.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Reactance"
+               name="Reactance"
+               xstype="float">
+      <Comment>Reactance (imaginary part of impedance), at rated frequency.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#SusceptancePerLength"
+               name="SusceptancePerLength"
+               xstype="float">
+      <Comment>Imaginary part of admittance per unit of length.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Conductance"
+               name="Conductance"
+               xstype="float">
+      <Comment>Factor by which voltage must be multiplied to give corresponding power lost from a circuit. Real part of admittance.</Comment>
+   </SimpleType>
+   <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Susceptance"
+               name="Susceptance"
+               xstype="float">
+      <Comment>Imaginary part of admittance.</Comment>
+   </SimpleType>
+</Catalog>

@@ -866,20 +866,20 @@ namespace FTN.Common
 
 		private void InitializeTypeIdsInInsertOrder()
 		{			
-			typeIdsInInsertOrder.Add(ModelCode.BASEVOLTAGE);
-			typeIdsInInsertOrder.Add(ModelCode.LOCATION);
-			typeIdsInInsertOrder.Add(ModelCode.POWERTR);
-			typeIdsInInsertOrder.Add(ModelCode.POWERTRWINDING);
-			typeIdsInInsertOrder.Add(ModelCode.WINDINGTEST);			
+			typeIdsInInsertOrder.Add(ModelCode.SUBGEOGRAPHICAL_REGION);
+			typeIdsInInsertOrder.Add(ModelCode.LINE);
+			typeIdsInInsertOrder.Add(ModelCode.SERIES_COMPENSATOR);
+			typeIdsInInsertOrder.Add(ModelCode.DC_LINE_SEGMENT);
+			typeIdsInInsertOrder.Add(ModelCode.AC_LINE_SEGMENT);
+			typeIdsInInsertOrder.Add(ModelCode.PER_LENGTH_SEQ_IMPEDANCE);
 		}
 
 		private void InitializeNotSettablePropertyIds()
 		{			
 			notSettablePropertyIds.Add(ModelCode.IDOBJ_GID);
-			notSettablePropertyIds.Add(ModelCode.BASEVOLTAGE_CONDEQS);
-			notSettablePropertyIds.Add(ModelCode.LOCATION_PSRS);
-			notSettablePropertyIds.Add(ModelCode.POWERTRWINDING_TESTS);
-            notSettablePropertyIds.Add(ModelCode.POWERTR_WINDINGS);	
+			notSettablePropertyIds.Add(ModelCode.SUBGEOGRAPHICAL_REGION_LINES);
+			notSettablePropertyIds.Add(ModelCode.PER_LENGTH_SEQ_IMPEDANCE_ACLSEG);
+			notSettablePropertyIds.Add(ModelCode.EQUIPMENT_CONTAINER_EQUIPMENTS);	
 		}
 	
 		# endregion Initialization of metadata

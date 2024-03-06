@@ -11,11 +11,22 @@
   xml:base="http://iec.ch/TC57/2010/CIM-schema-cim15" > 
   <rdf:Description rdf:about="#ACLineSegment">
     <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.
 For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.</rdfs:comment>
     <rdfs:label>ACLineSegment</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Conductor"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ACLineSegment.PerLengthImpedance">
+    <cims:inverseRoleName rdf:resource="#PerLengthImpedance.ACLineSegments"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Per-length impedance of this line segment.</rdfs:comment>
+    <rdfs:domain rdf:resource="#ACLineSegment"/>
+    <rdfs:label>PerLengthImpedance</rdfs:label>
+    <rdfs:range rdf:resource="#PerLengthImpedance"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACLineSegment.b0ch">
     <cims:dataType rdf:resource="#Susceptance"/>
@@ -136,19 +147,79 @@ For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of th
     <rdfs:label>DCLineSegment</rdfs:label>
     <rdfs:subClassOf rdf:resource="#Conductor"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#DCLineSegment.dcSegmentInductance">
+    <cims:dataType rdf:resource="#Inductance"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Inductance of the DC line segment.</rdfs:comment>
+    <rdfs:domain rdf:resource="#DCLineSegment"/>
+    <rdfs:label>dcSegmentInductance</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DCLineSegment.dcSegmentResistance">
+    <cims:dataType rdf:resource="#Resistance"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Resistance of the DC line segment.</rdfs:comment>
+    <rdfs:domain rdf:resource="#DCLineSegment"/>
+    <rdfs:label>dcSegmentResistance</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="#Equipment">
     <cims:belongsToCategory rdf:resource="#Package_IES_Projects"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>The parts of a power system that are physical devices, electronic or mechanical.</rdfs:comment>
     <rdfs:label>Equipment</rdfs:label>
     <rdfs:subClassOf rdf:resource="#PowerSystemResource"/>
   </rdf:Description>
+  <rdf:Description rdf:about="#Equipment.EquipmentContainer">
+    <cims:inverseRoleName rdf:resource="#EquipmentContainer.Equipments"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ofAggregate"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Container of this equipment.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Equipment"/>
+    <rdfs:label>EquipmentContainer</rdfs:label>
+    <rdfs:range rdf:resource="#EquipmentContainer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment.aggregate">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or sychronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Equipment"/>
+    <rdfs:label>aggregate</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment.normallyInService">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>If true, the equipment is normally in service.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Equipment"/>
+    <rdfs:label>normallyInService</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="#EquipmentContainer">
     <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>A modeling construct to provide a root class for containing equipment.</rdfs:comment>
     <rdfs:label>EquipmentContainer</rdfs:label>
     <rdfs:subClassOf rdf:resource="#ConnectivityNodeContainer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EquipmentContainer.Equipments">
+    <cims:inverseRoleName rdf:resource="#Equipment.EquipmentContainer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..n"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#aggregateOf"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Contained equipment.</rdfs:comment>
+    <rdfs:domain rdf:resource="#EquipmentContainer"/>
+    <rdfs:label>Equipments</rdfs:label>
+    <rdfs:range rdf:resource="#Equipment"/>
   </rdf:Description>
   <rdf:Description rdf:about="#IdentifiedObject">
     <cims:belongsToCategory rdf:resource="#Package_Core"/>
@@ -158,7 +229,7 @@ For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of th
   </rdf:Description>
   <rdf:Description rdf:about="#IdentifiedObject.aliasName">
     <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
     <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.
@@ -168,7 +239,7 @@ The attribute aliasName is retained because of backwards compatibility between C
   </rdf:Description>
   <rdf:Description rdf:about="#IdentifiedObject.mRID">
     <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
     <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context.
@@ -179,12 +250,17 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
   </rdf:Description>
   <rdf:Description rdf:about="#IdentifiedObject.name">
     <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
     <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     <rdfs:comment>The name is any free human readable and possibly non unique text naming the object.</rdfs:comment>
     <rdfs:domain rdf:resource="#IdentifiedObject"/>
     <rdfs:label>name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Inductance">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Inductive part of reactance (imaginary part of impedance), at rated frequency.</rdfs:comment>
+    <rdfs:label>Inductance</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="#Length">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
@@ -193,10 +269,22 @@ For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about a
   </rdf:Description>
   <rdf:Description rdf:about="#Line">
     <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>Contains equipment beyond a substation belonging to a power transmission line.</rdfs:comment>
     <rdfs:label>Line</rdfs:label>
     <rdfs:subClassOf rdf:resource="#EquipmentContainer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Line.Region">
+    <cims:inverseRoleName rdf:resource="#SubGeographicalRegion.Lines"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#ofAggregate"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The sub-geographical region of the line.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Line"/>
+    <rdfs:label>Region</rdfs:label>
+    <rdfs:range rdf:resource="#SubGeographicalRegion"/>
   </rdf:Description>
   <rdf:Description rdf:about="#Package_Core">
     <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
@@ -229,10 +317,21 @@ Currently, normative parts of the model support the needs of information exchang
   </rdf:Description>
   <rdf:Description rdf:about="#PerLengthImpedance">
     <cims:belongsToCategory rdf:resource="#Package_IES_Projects"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>Common type for per-length impedance electrical catalogues.</rdfs:comment>
     <rdfs:label>PerLengthImpedance</rdfs:label>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PerLengthImpedance.ACLineSegments">
+    <cims:inverseRoleName rdf:resource="#ACLineSegment.PerLengthImpedance"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..n"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>All line segments described by this per-length impedance.</rdfs:comment>
+    <rdfs:domain rdf:resource="#PerLengthImpedance"/>
+    <rdfs:label>ACLineSegments</rdfs:label>
+    <rdfs:range rdf:resource="#ACLineSegment"/>
   </rdf:Description>
   <rdf:Description rdf:about="#PerLengthSequenceImpedance">
     <cims:belongsToCategory rdf:resource="#Package_IES_Projects"/>
@@ -385,10 +484,22 @@ Currently, normative parts of the model support the needs of information exchang
   </rdf:Description>
   <rdf:Description rdf:about="#SubGeographicalRegion">
     <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
     <rdfs:comment>A subset of a geographical region of a power system network model.</rdfs:comment>
     <rdfs:label>SubGeographicalRegion</rdfs:label>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SubGeographicalRegion.Lines">
+    <cims:inverseRoleName rdf:resource="#Line.Region"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..n"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#aggregateOf"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The lines within the sub-geographical region.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SubGeographicalRegion"/>
+    <rdfs:label>Lines</rdfs:label>
+    <rdfs:range rdf:resource="#Line"/>
   </rdf:Description>
   <rdf:Description rdf:about="#Susceptance">
     <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>

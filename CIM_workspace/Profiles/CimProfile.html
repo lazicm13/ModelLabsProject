@@ -215,6 +215,22 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="comment">Zero sequence series reactance of the entire line section.</p>
                </td>
             </tr>
+            <tr>
+               <th>
+                  <p class="name" id="ACLineSegment.PerLengthImpedance">PerLengthImpedance</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#PerLengthImpedance">PerLengthImpedance</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Per-length impedance of this line segment.</p>
+               </td>
+            </tr>
          </table>
          <h3>Inherited Members</h3>
          <table>
@@ -237,7 +253,55 @@ p.package { position: absolute; right: 10px; top: 0px}
             </tr>
          </table>
          <table/>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">aggregate</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.aggregate">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">normallyInService</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.normallyInService">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">EquipmentContainer</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EquipmentContainer">EquipmentContainer</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.EquipmentContainer">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table/>
          <table>
             <tr>
@@ -245,7 +309,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -260,7 +324,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -275,7 +339,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -294,7 +358,55 @@ p.package { position: absolute; right: 10px; top: 0px}
          <p class="package">IES_Projects</p>
          <p class="comment">The parts of the power system that are designed to carry current or that are conductively connected through terminals.</p>
          <h3>Inherited Members</h3>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">aggregate</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.aggregate">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">normallyInService</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.normallyInService">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">EquipmentContainer</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EquipmentContainer">EquipmentContainer</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.EquipmentContainer">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table/>
          <table>
             <tr>
@@ -302,7 +414,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -317,7 +429,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -332,7 +444,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -371,7 +483,55 @@ p.package { position: absolute; right: 10px; top: 0px}
          </table>
          <h3>Inherited Members</h3>
          <table/>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">aggregate</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.aggregate">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">normallyInService</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.normallyInService">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">EquipmentContainer</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EquipmentContainer">EquipmentContainer</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.EquipmentContainer">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table/>
          <table>
             <tr>
@@ -379,7 +539,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -394,7 +554,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -409,7 +569,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -435,7 +595,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -450,7 +610,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -465,7 +625,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -483,6 +643,41 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package">Wires</p>
          <p class="comment">A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="DCLineSegment.dcSegmentInductance">dcSegmentInductance</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Inductance">Inductance</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Inductance of the DC line segment.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="DCLineSegment.dcSegmentResistance">dcSegmentResistance</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Resistance">Resistance</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Resistance of the DC line segment.</p>
+               </td>
+            </tr>
+         </table>
          <h3>Inherited Members</h3>
          <table>
             <tr>
@@ -504,7 +699,55 @@ p.package { position: absolute; right: 10px; top: 0px}
             </tr>
          </table>
          <table/>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">aggregate</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.aggregate">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">normallyInService</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.normallyInService">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">EquipmentContainer</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EquipmentContainer">EquipmentContainer</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.EquipmentContainer">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table/>
          <table>
             <tr>
@@ -512,7 +755,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -527,7 +770,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -542,7 +785,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -560,6 +803,53 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package">IES_Projects</p>
          <p class="comment">The parts of a power system that are physical devices, electronic or mechanical.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Equipment.aggregate">aggregate</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p class="comment">The single instance of equipment represents multiple pieces of equipment that have been modeled together as an aggregate.  Examples would be power transformers or sychronous machines operating in parallel modeled as a single aggregate power transformer or aggregate synchronous machine.  This is not to be used to indicate equipment that is part of a group of interdependent equipment produced by a network production program.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Equipment.normallyInService">normallyInService</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p class="comment">If true, the equipment is normally in service.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Equipment.EquipmentContainer">EquipmentContainer</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EquipmentContainer">EquipmentContainer</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Container of this equipment.</p>
+               </td>
+            </tr>
+         </table>
          <h3>Inherited Members</h3>
          <table/>
          <table>
@@ -568,7 +858,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -583,7 +873,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -598,7 +888,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -616,6 +906,26 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package">Core</p>
          <p class="comment">A modeling construct to provide a root class for containing equipment.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentContainer.Equipments">Equipments</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Contained equipment.</p>
+               </td>
+            </tr>
+         </table>
          <h3>Inherited Members</h3>
          <table/>
          <table/>
@@ -625,7 +935,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -640,7 +950,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -655,7 +965,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -680,7 +990,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name" id="IdentifiedObject.mRID">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -696,7 +1006,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name" id="IdentifiedObject.aliasName">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -711,7 +1021,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name" id="IdentifiedObject.name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -728,8 +1038,45 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package">Wires</p>
          <p class="comment">Contains equipment beyond a substation belonging to a power transmission line.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Line.Region">Region</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#SubGeographicalRegion">SubGeographicalRegion</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The sub-geographical region of the line.</p>
+               </td>
+            </tr>
+         </table>
          <h3>Inherited Members</h3>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">Equipments</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..unbounded</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#EquipmentContainer.Equipments">EquipmentContainer</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table/>
          <table/>
          <table>
@@ -738,7 +1085,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -753,7 +1100,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -768,7 +1115,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -786,6 +1133,26 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package">IES_Projects</p>
          <p class="comment">Common type for per-length impedance electrical catalogues.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="PerLengthImpedance.ACLineSegments">ACLineSegments</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#ACLineSegment">ACLineSegment</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">All line segments described by this per-length impedance.</p>
+               </td>
+            </tr>
+         </table>
          <h3>Inherited Members</h3>
          <table>
             <tr>
@@ -793,7 +1160,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -808,7 +1175,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -823,7 +1190,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -973,14 +1340,32 @@ p.package { position: absolute; right: 10px; top: 0px}
             </tr>
          </table>
          <h3>Inherited Members</h3>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">ACLineSegments</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..unbounded</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#ACLineSegment">ACLineSegment</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#PerLengthImpedance.ACLineSegments">PerLengthImpedance</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table>
             <tr>
                <th>
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -995,7 +1380,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1010,7 +1395,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1035,7 +1420,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1050,7 +1435,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1065,7 +1450,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1152,7 +1537,55 @@ p.package { position: absolute; right: 10px; top: 0px}
          </table>
          <h3>Inherited Members</h3>
          <table/>
-         <table/>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">aggregate</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.aggregate">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">normallyInService</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.normallyInService">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">EquipmentContainer</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EquipmentContainer">EquipmentContainer</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Equipment.EquipmentContainer">Equipment</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
          <table/>
          <table>
             <tr>
@@ -1160,7 +1593,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1175,7 +1608,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1190,7 +1623,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1208,6 +1641,26 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package">Core</p>
          <p class="comment">A subset of a geographical region of a power system network model.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="SubGeographicalRegion.Lines">Lines</p>
+               </th>
+               <td>
+                  <p class="cardinality">0..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Line">Line</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The lines within the sub-geographical region.</p>
+               </td>
+            </tr>
+         </table>
          <h3>Inherited Members</h3>
          <table>
             <tr>
@@ -1215,7 +1668,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">mRID</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1230,7 +1683,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">aliasName</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1245,7 +1698,7 @@ p.package { position: absolute; right: 10px; top: 0px}
                   <p class="name">name</p>
                </th>
                <td>
-                  <p class="cardinality">1..1</p>
+                  <p class="cardinality">0..1</p>
                </td>
                <td class="type">
                   <p class="type">string</p>
@@ -1275,6 +1728,15 @@ p.package { position: absolute; right: 10px; top: 0px}
          </a>
          <p class="package"/>
          <p class="comment">Real part of admittance per unit of length.</p>
+         <p class="declaration">XSD type: <span class="xsdtype">float</span>
+         </p>
+      </div>
+      <div id="Inductance" class="group">
+         <a href="#Inductance">
+            <h2 class="domain">Inductance</h2>
+         </a>
+         <p class="package"/>
+         <p class="comment">Inductive part of reactance (imaginary part of impedance), at rated frequency.</p>
          <p class="declaration">XSD type: <span class="xsdtype">float</span>
          </p>
       </div>
