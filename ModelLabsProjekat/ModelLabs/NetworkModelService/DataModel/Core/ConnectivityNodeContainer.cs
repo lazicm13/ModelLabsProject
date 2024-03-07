@@ -1,17 +1,14 @@
-﻿using System;
+﻿using FTN.Common;
+using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization;
 using System.Text;
-using System.Xml;
-using FTN.Common;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
-	public class ConductingEquipment : Equipment
-	{
-		public ConductingEquipment(long globalId)
+    public class ConnectivityNodeContainer : PowerSystemResource
+    {
+		public ConnectivityNodeContainer(long globalId)
 			: base(globalId)
 		{
 		}
@@ -59,6 +56,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 			base.GetReferences(references, refType);
 		}
 
-		#endregion
-	}
+        #endregion
+    }
 }
