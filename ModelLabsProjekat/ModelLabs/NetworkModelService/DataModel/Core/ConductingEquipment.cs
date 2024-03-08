@@ -11,8 +11,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 {
 	public class ConductingEquipment : Equipment
 	{
-		public ConductingEquipment(long globalId)
-			: base(globalId)
+		public ConductingEquipment(long globalId) : base(globalId)
 		{
 		}
 

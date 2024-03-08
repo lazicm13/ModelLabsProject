@@ -8,8 +8,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 {
     public class ConnectivityNodeContainer : PowerSystemResource
     {
-		public ConnectivityNodeContainer(long globalId)
-			: base(globalId)
+		public ConnectivityNodeContainer(long globalId) : base(globalId)
 		{
 		}
 

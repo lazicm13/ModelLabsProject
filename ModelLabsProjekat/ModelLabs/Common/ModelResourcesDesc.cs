@@ -878,7 +878,7 @@ namespace FTN.Common
 		{			
 			notSettablePropertyIds.Add(ModelCode.IDOBJ_GID);
 			notSettablePropertyIds.Add(ModelCode.SUBGEOGRAPHICAL_REGION_LINES);
-			notSettablePropertyIds.Add(ModelCode.PER_LENGTH_SEQ_IMPEDANCE_ACLSEG);
+			notSettablePropertyIds.Add(ModelCode.PER_LENGTH_IMPEDANCE_ACLSEG);
 			notSettablePropertyIds.Add(ModelCode.EQUIPMENT_CONTAINER_EQUIPMENTS);	
 		}
 	

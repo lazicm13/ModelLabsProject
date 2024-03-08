@@ -18,40 +18,19 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		public Equipment(long globalId) : base(globalId) 
 		{
 		}
-	
-		public bool Aggregate
-		{
-			get
-			{
-				return aggregate;
-			}
 
-			set
-			{
-				aggregate = value;
-			}
-		}
+        public bool Aggregate { get => aggregate; set => aggregate = value; }
+        public bool NormallyInService { get => normallyInService; set => normallyInService = value; }
+        public long EquipmentContainer { get => equipmentContainer; set => equipmentContainer = value; }
 
-		public bool NormallyInService
-		{
-			get 
-			{
-				return normallyInService; 
-			}
-			
-			set
-			{ 
-				normallyInService = value; 
-			}
-		}
-
-		public override bool Equals(object obj)
+        public override bool Equals(object obj)
 		{
 			if (base.Equals(obj))
 			{
 				Equipment x = (Equipment)obj;
-				return ((x.aggregate == this.aggregate) &&
-						(x.normallyInService == this.normallyInService));
+				return ((x.Aggregate == this.Aggregate) &&
+						(x.NormallyInService == this.NormallyInService) &&
+						x.EquipmentContainer == this.equipmentContainer);
 			}
 			else
 			{
@@ -72,6 +51,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 			{
 				case ModelCode.EQUIPMENT_AGGREGATE:
 				case ModelCode.EQUIPMENT_NORM_IN_SERV:
+				case ModelCode.EQUIPMENT_EQUIPCONT:
 		
 					return true;
 				default:
@@ -83,13 +63,17 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		{
 			switch (property.Id)
 			{
-				case ModelCode.EQUIPMENT_ISUNDERGROUND:
-					property.SetValue(isUnderground);
+				case ModelCode.EQUIPMENT_AGGREGATE:
+					property.SetValue(aggregate);
 					break;
 
-				case ModelCode.EQUIPMENT_ISPRIVATE:
-					property.SetValue(isPrivate);
-					break;			
+				case ModelCode.EQUIPMENT_NORM_IN_SERV:
+					property.SetValue(normallyInService);
+					break;
+
+				case ModelCode.EQUIPMENT_EQUIPCONT:
+					property.SetValue(equipmentContainer);
+					break;
 
 				default:
 					base.GetProperty(property);
@@ -101,20 +85,34 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		{
 			switch (property.Id)
 			{
-				case ModelCode.EQUIPMENT_ISUNDERGROUND:					
-					isUnderground = property.AsBool();
+				case ModelCode.EQUIPMENT_AGGREGATE:					
+					aggregate = property.AsBool();
 					break;
 
-				case ModelCode.EQUIPMENT_ISPRIVATE:
-					isPrivate = property.AsBool();
+				case ModelCode.EQUIPMENT_NORM_IN_SERV:
+					normallyInService = property.AsBool();
 					break;
-			
+
+				case ModelCode.EQUIPMENT_EQUIPCONT:
+					equipmentContainer = property.AsReference();
+					break;
+
 				default:
 					base.SetProperty(property);
 					break;
 			}
-		}		
+		}
 
 		#endregion IAccess implementation
+
+		public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
+		{
+			if (equipmentContainer != 0 && (refType == TypeOfReference.Target || refType == TypeOfReference.Both))
+			{
+				references[ModelCode.EQUIPMENT_EQUIPCONT] = new List<long> { equipmentContainer };
+			}
+
+			base.GetReferences(references, refType);
+		}
 	}
 }
