@@ -1,4 +1,5 @@
 ﻿using FTN.Common;
+using FTN.Services.NetworkModelService.DataModel.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -133,9 +134,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
                 case ModelCode.PER_LENGTH_SEQ_IMPEDANCE_R0:
                     this.R0 = property.AsFloat();
                     break;
-                case ModelCode.PER_LENGTH_SEQ_IMPEDANCE_PERLENGTHIMP:
-                    this.PerLengthImpedance = property.AsReference();
-                    break;
                 default:
                     base.SetProperty(property);
                     break;
@@ -149,45 +147,9 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
         {
-            if (perLengthImpedance != 0 && (refType == TypeOfReference.Both || refType == TypeOfReference.Target))
-            {
-                references[ModelCode.PER_LENGTH_SEQ_IMPEDANCE_PERLENGTHIMP] = new List<long> { perLengthImpedance };
-            }
             base.GetReferences(references, refType);
         }
 
-        public override void AddReference(ModelCode referenceId, long globalId)
-        {
-            switch (referenceId)
-            {
-                case ModelCode.PER_LENGTH_SEQ_IMPEDANCE_PERLENGTHIMP:
-                    perLengthImpedance = globalId;
-                    break;
-                default:
-                    base.AddReference(referenceId, globalId);
-                    break;
-            }
-        }
-
-        public override void RemoveReference(ModelCode referenceId, long globalId)
-        {
-            switch (referenceId)
-            {
-                case ModelCode.PER_LENGTH_SEQ_IMPEDANCE_PERLENGTHIMP:
-                    if (perLengthImpedance == globalId)
-                    {
-                        perLengthImpedance = 0;
-                    }
-                    else
-                    {
-                        CommonTrace.WriteTrace(CommonTrace.TraceWarning, "Entity (GID = 0x{0:x16}) doesn't contain reference 0x{1:x16}.", this.GlobalId, globalId);
-                    }
-                    break;
-                default:
-                    base.RemoveReference(referenceId, globalId);
-                    break;
-            }
-        }
 
         #endregion
     }
