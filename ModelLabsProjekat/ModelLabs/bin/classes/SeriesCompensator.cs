@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTN_68 {
+namespace FTN {
     using System;
-    using FTN_68;
+    using FTN;
     
     
     /// A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device.

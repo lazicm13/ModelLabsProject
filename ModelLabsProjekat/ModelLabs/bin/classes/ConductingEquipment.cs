@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTN_68 {
+namespace FTN {
     using System;
-    using FTN_68;
+    using FTN;
     
     
     /// The parts of the power system that are designed to carry current or that are conductively connected through terminals.

@@ -27,7 +27,6 @@ C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\Mode
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\Predefined\PredefinedPackages.xml
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\CIMProfileCreator.csproj.AssemblyReference.cache
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.CIMProfileCreatorForm.resources
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.Properties.Resources.resources
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\CIMProfileCreator.csproj.GenerateResource.cache

@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTN_68 {
+namespace FTN {
     using System;
-    using FTN_68;
+    using FTN;
     
     
     /// This is a root class to provide common identification for all classes needing identification and naming attributes.

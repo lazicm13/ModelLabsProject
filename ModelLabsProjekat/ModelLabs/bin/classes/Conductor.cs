@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTN_68 {
+namespace FTN {
     using System;
-    using FTN_68;
+    using FTN;
     
     
     /// Combination of conducting material with consistent electrical characteristics, building a single electrical system, used to carry current between points in the power system.

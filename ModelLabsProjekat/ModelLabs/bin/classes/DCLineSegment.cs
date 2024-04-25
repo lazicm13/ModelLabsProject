@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTN_68 {
+namespace FTN {
     using System;
-    using FTN_68;
+    using FTN;
     
     
     /// A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.

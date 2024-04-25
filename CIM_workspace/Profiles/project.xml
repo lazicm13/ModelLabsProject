@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+	
+<!-- Sub Geographical Regions -->
+	<cim:SubGeographicalRegion rdf:ID="SGR1">
+		<cim:IdentifiedObject.aliasName>SGR1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SGR1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SGR1</cim:IdentifiedObject.name>
+	</cim:SubGeographicalRegion>
+	
+	<cim:SubGeographicalRegion rdf:ID="SGR2">
+		<cim:IdentifiedObject.aliasName>SGR2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SGR2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SGR2</cim:IdentifiedObject.name>
+	</cim:SubGeographicalRegion>
+	
+<!-- Lines -->
+	<cim:Line rdf:ID="L1">
+		<cim:Line.Region rdf:resource="#"/>
+		<cim:IdentifiedObject.aliasName>L1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>L1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L1</cim:IdentifiedObject.name>
+	</cim:Line>
+	
+	<cim:Line rdf:ID="L2">
+		<cim:Line.Region rdf:resource="#"/>
+		<cim:IdentifiedObject.aliasName>L2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>L2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>L2</cim:IdentifiedObject.name>
+	</cim:Line>
+	
+<!-- Series Compensators -->
+	<cim:SeriesCompensator rdf:ID="SC1">
+		<cim:SeriesCompensator.r></cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0></cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x></cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0></cim:SeriesCompensator.x0>
+		<cim:Equipment.aggregate></cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
+		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>SC1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SC1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SC1</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+	
+	<cim:SeriesCompensator rdf:ID="SC2">
+		<cim:SeriesCompensator.r></cim:SeriesCompensator.r>
+		<cim:SeriesCompensator.r0></cim:SeriesCompensator.r0>
+		<cim:SeriesCompensator.x></cim:SeriesCompensator.x>
+		<cim:SeriesCompensator.x0></cim:SeriesCompensator.x0>
+		<cim:Equipment.aggregate></cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
+		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>SC2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SC2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>SC2</cim:IdentifiedObject.name>
+	</cim:SeriesCompensator>
+	
+<!-- DC Line Segments -->
+	<cim:DCLineSegment rdf:ID="LS1">
+		<cim:DCLineSegment.dcSegmentInductance></cim:DCLineSegment.dcSegmentInductance>
+		<cim:DCLineSegment.dcSegmentResistance></cim:DCLineSegment.dcSegmentResistance>
+		<cim:Conductor.length></cim:Conductor.length>
+		<cim:Equipment.aggregate></cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
+		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>LS1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LS1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>LS1</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+	
+	<cim:DCLineSegment rdf:ID="LS2">
+		<cim:DCLineSegment.dcSegmentInductance></cim:DCLineSegment.dcSegmentInductance>
+		<cim:DCLineSegment.dcSegmentResistance></cim:DCLineSegment.dcSegmentResistance>
+		<cim:Conductor.length></cim:Conductor.length>
+		<cim:Equipment.aggregate></cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
+		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>LS2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>LS2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>LS2</cim:IdentifiedObject.name>
+	</cim:DCLineSegment>
+	
+<!-- ACLineSegments -->
+	<cim:ACLineSegment rdf:ID="ALS1">
+		<cim:ACLineSegment.b0ch></cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.bch></cim:ACLineSegment.bch>
+		<cim:ACLineSegment.g0ch></cim:ACLineSegment.g0ch>
+		<cim:ACLineSegment.gch></cim:ACLineSegment.gch>
+		<cim:ACLineSegment.PerLengthImpedance rdf:resource="#"/>
+		<cim:ACLineSegment.r></cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0></cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x></cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0></cim:ACLineSegment.x0>
+		<cim:Conductor.length></cim:Conductor.length>
+		<cim:Equipment.aggregate></cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
+		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>ALS1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ALS1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ALS1</cim:IdentifiedObject.name>
+	</cim:ACLineSegment>
+	
+	<cim:ACLineSegment rdf:ID="ALS2">
+		<cim:ACLineSegment.b0ch></cim:ACLineSegment.b0ch>
+		<cim:ACLineSegment.bch></cim:ACLineSegment.bch>
+		<cim:ACLineSegment.g0ch></cim:ACLineSegment.g0ch>
+		<cim:ACLineSegment.gch></cim:ACLineSegment.gch>
+		<cim:ACLineSegment.PerLengthImpedance rdf:resource="#"/>
+		<cim:ACLineSegment.r></cim:ACLineSegment.r>
+		<cim:ACLineSegment.r0></cim:ACLineSegment.r0>
+		<cim:ACLineSegment.x></cim:ACLineSegment.x>
+		<cim:ACLineSegment.x0></cim:ACLineSegment.x0>
+		<cim:Conductor.length></cim:Conductor.length>
+		<cim:Equipment.aggregate></cim:Equipment.aggregate>
+		<cim:Equipment.EquipmentContainer rdf:resource="#"/>
+		<cim:Equipment.normallyInService></cim:Equipment.normallyInService>
+		<cim:IdentifiedObject.aliasName>ALS2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ALS2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>ALS2</cim:IdentifiedObject.name>
+	</cim:ACLineSegment>
+
+<!-- Per Length Sequence Impedance -->
+	<cim:PerLengthSequenceImpedance rdf:ID="PLSI1">
+		<cim:PerLengthSequenceImpedance.b0ch></cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch></cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch></cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch></cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r></cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0></cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x></cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0></cim:PerLengthSequenceImpedance.x0>
+		<cim:IdentifiedObject.aliasName>PLSI1</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PLSI1</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>PLSI1</cim:IdentifiedObject.name>
+	</cim:PerLengthSequenceImpedance>
+	
+	<cim:PerLengthSequenceImpedance rdf:ID="PLSI2">
+		<cim:PerLengthSequenceImpedance.b0ch></cim:PerLengthSequenceImpedance.b0ch>
+		<cim:PerLengthSequenceImpedance.bch></cim:PerLengthSequenceImpedance.bch>
+		<cim:PerLengthSequenceImpedance.g0ch></cim:PerLengthSequenceImpedance.g0ch>
+		<cim:PerLengthSequenceImpedance.gch></cim:PerLengthSequenceImpedance.gch>
+		<cim:PerLengthSequenceImpedance.r></cim:PerLengthSequenceImpedance.r>
+		<cim:PerLengthSequenceImpedance.r0></cim:PerLengthSequenceImpedance.r0>
+		<cim:PerLengthSequenceImpedance.x></cim:PerLengthSequenceImpedance.x>
+		<cim:PerLengthSequenceImpedance.x0></cim:PerLengthSequenceImpedance.x0>
+		<cim:IdentifiedObject.aliasName>PLSI2</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>PLSI2</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>PLSI2</cim:IdentifiedObject.name>
+	</cim:PerLengthSequenceImpedance>
+	
+</rdf:RDF>

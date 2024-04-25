@@ -13,7 +13,7 @@ using System.Runtime.InteropServices;
 
 [assembly: AssemblyVersion("1.0.0")]
 
-namespace FTN_68 {
+namespace FTN {
     using System;
     
     

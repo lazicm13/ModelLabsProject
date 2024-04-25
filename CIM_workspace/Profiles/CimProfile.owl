@@ -59,28 +59,6 @@
     <rdfs:label>dcSegmentInductance</rdfs:label>
     <owl:equivalentClass rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#Inductance"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fe9">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fea"/>
-    <owl:onProperty rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion.Lines"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fea">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Lines</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#Line"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fec">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fed"/>
-    <owl:onProperty rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthImpedance.ACLineSegments"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fed">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>ACLineSegments</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment"/>
-  </rdf:Description>
   <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fef">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
     <owl:allValuesFrom rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ff0"/>
@@ -91,17 +69,6 @@
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:label>Region</rdfs:label>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ff2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
-    <owl:allValuesFrom rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ff3"/>
-    <owl:onProperty rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#EquipmentContainer.Equipments"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ff3">
-    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#byreference"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Equipments</rdfs:label>
-    <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#Equipment"/>
   </rdf:Description>
   <rdf:Description rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ff5">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
@@ -370,6 +337,7 @@
     <owl:imports rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15"/>
   </rdf:Description>
   <rdf:Description rdf:about="#ACLineSegment">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ffe"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X26d09316Xa3X18dc774ac6dXa3X-7fd4"/>
@@ -400,6 +368,7 @@
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#ConnectivityNodeContainer"/>
   </rdf:Description>
   <rdf:Description rdf:about="#DCLineSegment">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fe3"/>
     <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fe6"/>
@@ -416,7 +385,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="#EquipmentContainer">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7ff2"/>
     <rdfs:subClassOf rdf:resource="#ConnectivityNodeContainer"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#EquipmentContainer"/>
   </rdf:Description>
@@ -428,6 +396,7 @@
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject"/>
   </rdf:Description>
   <rdf:Description rdf:about="#Line">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fef"/>
     <rdfs:subClassOf rdf:resource="#EquipmentContainer"/>
@@ -435,11 +404,11 @@
   </rdf:Description>
   <rdf:Description rdf:about="#PerLengthImpedance">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fec"/>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthImpedance"/>
   </rdf:Description>
   <rdf:Description rdf:about="#PerLengthSequenceImpedance">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X26d09316Xa3X18dc774ac6dXa3X-7fb9"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X26d09316Xa3X18dc774ac6dXa3X-7fbc"/>
@@ -458,6 +427,7 @@
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#PowerSystemResource"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SeriesCompensator">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X26d09316Xa3X18dc774ac6dXa3X-7fad"/>
     <rdfs:subClassOf rdf:nodeID="Xd2X26d09316Xa3X18dc774ac6dXa3X-7fb0"/>
@@ -467,8 +437,8 @@
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator"/>
   </rdf:Description>
   <rdf:Description rdf:about="#SubGeographicalRegion">
+    <uml:hasStereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:nodeID="X33Xe3f98c8Xa3X18e131ccbfeXa3X-7fe9"/>
     <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
     <rdfs:subClassOf rdf:resource="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion"/>
   </rdf:Description>

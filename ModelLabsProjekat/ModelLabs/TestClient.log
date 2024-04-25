@@ -1,0 +1,10 @@
+4/23/2024 11:38:51 AM : Network Model Service Test Client is up and running...
+4/23/2024 11:38:51 AM : Result directory: ../Results
+4/23/2024 11:38:56 AM : Getting values method started.
+4/23/2024 11:38:56 AM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/23/2024 11:38:56 AM : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/23/2024 11:39:03 AM : Getting values method started.
+4/23/2024 11:39:03 AM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/23/2024 11:39:03 AM : Getting values method for entered id = 2 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type

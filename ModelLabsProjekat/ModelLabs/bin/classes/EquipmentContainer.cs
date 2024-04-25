@@ -8,47 +8,12 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace FTN_68 {
+namespace FTN {
     using System;
-    using FTN_68;
-    using System.Collections.Generic;
+    using FTN;
     
     
     /// A modeling construct to provide a root class for containing equipment.
     public class EquipmentContainer : ConnectivityNodeContainer {
-        
-        /// Contained equipment.
-        private List<Equipment> cim_Equipments = new List<Equipment>();
-        
-        private const bool isEquipmentsMandatory = false;
-        
-        private const string _EquipmentsPrefix = "cim";
-        
-        public virtual List<Equipment> Equipments {
-            get {
-                return this.cim_Equipments;
-            }
-            set {
-                this.cim_Equipments = value;
-            }
-        }
-        
-        public virtual bool EquipmentsHasValue {
-            get {
-                return this.cim_Equipments != null;
-            }
-        }
-        
-        public static bool IsEquipmentsMandatory {
-            get {
-                return isEquipmentsMandatory;
-            }
-        }
-        
-        public static string EquipmentsPrefix {
-            get {
-                return _EquipmentsPrefix;
-            }
-        }
     }
 }

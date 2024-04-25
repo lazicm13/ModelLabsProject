@@ -3,13 +3,14 @@
          xmlns:m="http://iec.ch/TC57/2007/profile#"
          baseURI="http://iec.ch/TC57/2007/profile#"
          name="Profile">
-   <ComplexType name="ACLineSegment"
-                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment"
-                package="Wires"
-                minOccurs="0"
-                maxOccurs="unbounded">
+   <Root name="ACLineSegment"
+         baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#ACLineSegment"
+         package="Wires"
+         minOccurs="0"
+         maxOccurs="unbounded">
       <Comment>A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.</Comment>
       <Comment>For symmetrical, transposed 3ph lines, it is sufficient to use  attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.</Comment>
+      <Stereotype>http://langdale.com.au/2005/UML#concrete</Stereotype>
       <SuperType name="Conductor"/>
       <Domain type="Susceptance"
               dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Susceptance"
@@ -91,7 +92,7 @@
          <Comment>Per-length impedance of this line segment.</Comment>
          <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
       </Reference>
-   </ComplexType>
+   </Root>
    <ComplexType name="ConductingEquipment"
                 baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#ConductingEquipment"
                 package="IES_Projects"
@@ -125,12 +126,13 @@
       <Comment>A base class for all objects that may contain connectivity nodes or topological nodes.</Comment>
       <SuperType name="PowerSystemResource"/>
    </ComplexType>
-   <ComplexType name="DCLineSegment"
-                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#DCLineSegment"
-                package="Wires"
-                minOccurs="0"
-                maxOccurs="unbounded">
+   <Root name="DCLineSegment"
+         baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#DCLineSegment"
+         package="Wires"
+         minOccurs="0"
+         maxOccurs="unbounded">
       <Comment>A wire or combination of wires not insulated from one another, with consistent electrical characteristics, used to carry direct current between points in the DC region of the power system.</Comment>
+      <Stereotype>http://langdale.com.au/2005/UML#concrete</Stereotype>
       <SuperType name="Conductor"/>
       <Domain type="Inductance"
               dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Inductance"
@@ -150,7 +152,7 @@
               maxOccurs="1">
          <Comment>Resistance of the DC line segment.</Comment>
       </Domain>
-   </ComplexType>
+   </Root>
    <ComplexType name="Equipment"
                 baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#Equipment"
                 package="IES_Projects"
@@ -190,14 +192,6 @@
                 maxOccurs="unbounded">
       <Comment>A modeling construct to provide a root class for containing equipment.</Comment>
       <SuperType name="ConnectivityNodeContainer"/>
-      <Reference type="Equipment"
-                 name="Equipments"
-                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#EquipmentContainer.Equipments"
-                 minOccurs="0"
-                 maxOccurs="unbounded">
-         <Comment>Contained equipment.</Comment>
-         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
-      </Reference>
    </ComplexType>
    <ComplexType name="IdentifiedObject"
                 baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#IdentifiedObject"
@@ -233,12 +227,13 @@
          <Comment>The name is any free human readable and possibly non unique text naming the object.</Comment>
       </Simple>
    </ComplexType>
-   <ComplexType name="Line"
-                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#Line"
-                package="Wires"
-                minOccurs="0"
-                maxOccurs="unbounded">
+   <Root name="Line"
+         baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#Line"
+         package="Wires"
+         minOccurs="0"
+         maxOccurs="unbounded">
       <Comment>Contains equipment beyond a substation belonging to a power transmission line.</Comment>
+      <Stereotype>http://langdale.com.au/2005/UML#concrete</Stereotype>
       <SuperType name="EquipmentContainer"/>
       <Reference type="SubGeographicalRegion"
                  name="Region"
@@ -248,7 +243,7 @@
          <Comment>The sub-geographical region of the line.</Comment>
          <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
       </Reference>
-   </ComplexType>
+   </Root>
    <ComplexType name="PerLengthImpedance"
                 baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthImpedance"
                 package="IES_Projects"
@@ -256,21 +251,14 @@
                 maxOccurs="unbounded">
       <Comment>Common type for per-length impedance electrical catalogues.</Comment>
       <SuperType name="IdentifiedObject"/>
-      <Reference type="ACLineSegment"
-                 name="ACLineSegments"
-                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthImpedance.ACLineSegments"
-                 minOccurs="0"
-                 maxOccurs="unbounded">
-         <Comment>All line segments described by this per-length impedance.</Comment>
-         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
-      </Reference>
    </ComplexType>
-   <ComplexType name="PerLengthSequenceImpedance"
-                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance"
-                package="IES_Projects"
-                minOccurs="0"
-                maxOccurs="unbounded">
+   <Root name="PerLengthSequenceImpedance"
+         baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PerLengthSequenceImpedance"
+         package="IES_Projects"
+         minOccurs="0"
+         maxOccurs="unbounded">
       <Comment>Sequence impedance and admittance parameters per unit length, for transposed lines of 1, 2, or 3 phases. For 1-phase lines, define x=x0=xself. For 2-phase lines, define x=xs-xm and x0=xs+xm.</Comment>
+      <Stereotype>http://langdale.com.au/2005/UML#concrete</Stereotype>
       <SuperType name="PerLengthImpedance"/>
       <Domain type="SusceptancePerLength"
               dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#SusceptancePerLength"
@@ -344,7 +332,7 @@
               maxOccurs="1">
          <Comment>Zero sequence series reactance, per unit of length.</Comment>
       </Domain>
-   </ComplexType>
+   </Root>
    <ComplexType name="PowerSystemResource"
                 baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#PowerSystemResource"
                 package="Core"
@@ -353,12 +341,13 @@
       <Comment>A power system resource can be an item of equipment such as a switch, an equipment container containing many individual items of equipment such as a substation, or an organisational entity such as sub-control area. Power system resources can have measurements associated.</Comment>
       <SuperType name="IdentifiedObject"/>
    </ComplexType>
-   <ComplexType name="SeriesCompensator"
-                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator"
-                package="IES_Projects"
-                minOccurs="0"
-                maxOccurs="unbounded">
+   <Root name="SeriesCompensator"
+         baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#SeriesCompensator"
+         package="IES_Projects"
+         minOccurs="0"
+         maxOccurs="unbounded">
       <Comment>A Series Compensator is a series capacitor or reactor or an AC transmission line without charging susceptance.  It is a two terminal device.</Comment>
+      <Stereotype>http://langdale.com.au/2005/UML#concrete</Stereotype>
       <SuperType name="ConductingEquipment"/>
       <Domain type="Resistance"
               dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Resistance"
@@ -396,23 +385,16 @@
               maxOccurs="1">
          <Comment>Zero sequence reactance.</Comment>
       </Domain>
-   </ComplexType>
-   <ComplexType name="SubGeographicalRegion"
-                baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion"
-                package="Core"
-                minOccurs="0"
-                maxOccurs="unbounded">
+   </Root>
+   <Root name="SubGeographicalRegion"
+         baseClass="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion"
+         package="Core"
+         minOccurs="0"
+         maxOccurs="unbounded">
       <Comment>A subset of a geographical region of a power system network model.</Comment>
+      <Stereotype>http://langdale.com.au/2005/UML#concrete</Stereotype>
       <SuperType name="IdentifiedObject"/>
-      <Reference type="Line"
-                 name="Lines"
-                 baseProperty="http://iec.ch/TC57/2010/CIM-schema-cim15#SubGeographicalRegion.Lines"
-                 minOccurs="0"
-                 maxOccurs="unbounded">
-         <Comment>The lines within the sub-geographical region.</Comment>
-         <Stereotype>http://langdale.com.au/2005/UML#byreference</Stereotype>
-      </Reference>
-   </ComplexType>
+   </Root>
    <SimpleType dataType="http://iec.ch/TC57/2010/CIM-schema-cim15#Inductance"
                name="Inductance"
                xstype="float">
