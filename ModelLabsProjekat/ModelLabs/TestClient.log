@@ -8,3 +8,20 @@
 4/23/2024 11:39:03 AM : Failed to get model type code for DMS type: 0. Invalid DMS type
 4/23/2024 11:39:03 AM : Getting values method for entered id = 2 failed.
 	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/26/2024 2:11:28 PM : Network Model Service Test Client is up and running...
+4/26/2024 2:11:28 PM : Result directory: ../Results
+4/26/2024 2:11:36 PM : Getting values method started.
+4/26/2024 2:11:36 PM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/26/2024 2:11:36 PM : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/26/2024 2:12:02 PM : Getting values method started.
+4/26/2024 2:12:04 PM : Getting values method for entered id = 30064771071 failed.
+	Getting values for resource with ID = 0x00000006ffffffff failed. Failed to get values for entity with GID = 0x00000006ffffffff. Entity  (GID = 0x00000006ffffffff) does not exist.
+4/26/2024 2:12:28 PM : Getting values method started.
+4/26/2024 2:12:29 PM : Getting values method for entered id = 8589934591 failed.
+	Getting values for resource with ID = 0x00000001ffffffff failed. Failed to get values for entity with GID = 0x00000001ffffffff. Entity  (GID = 0x00000001ffffffff) does not exist.
+4/26/2024 2:12:45 PM : Getting values method started.
+4/26/2024 2:12:45 PM : Getting values method successfully finished.
+4/26/2024 2:13:20 PM : Getting extent values method started.
+4/26/2024 2:13:20 PM : Getting extent values method failed for 6.
+	Invalid Model Code: 6

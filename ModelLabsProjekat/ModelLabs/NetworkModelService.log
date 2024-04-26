@@ -6,3 +6,671 @@
 4/23/2024 11:56:28 AM : Trace level: Info
 4/23/2024 11:56:28 AM : The Network Model Service is started.
 4/23/2024 11:56:28 AM : Press <Enter> to stop the service.
+4/26/2024 10:39:36 AM : Starting Network Model Serivice...
+4/26/2024 10:39:46 AM : The WCF service GenericDataAccess is ready.
+4/26/2024 10:39:46 AM : Endpoints:
+4/26/2024 10:39:46 AM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 10:39:46 AM : Connection string: ../NetworkModelData.data
+4/26/2024 10:39:46 AM : Trace level: Info
+4/26/2024 10:39:46 AM : The Network Model Service is started.
+4/26/2024 10:39:46 AM : Press <Enter> to stop the service.
+4/26/2024 12:53:03 PM : Starting Network Model Serivice...
+4/26/2024 12:53:04 PM : The WCF service GenericDataAccess is ready.
+4/26/2024 12:53:04 PM : Endpoints:
+4/26/2024 12:53:04 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 12:53:04 PM : Connection string: ../NetworkModelData.data
+4/26/2024 12:53:04 PM : Trace level: Info
+4/26/2024 12:53:04 PM : The Network Model Service is started.
+4/26/2024 12:53:04 PM : Press <Enter> to stop the service.
+4/26/2024 12:59:08 PM : Applying  delta to network model.
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000100000001).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000100000002).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000100000003).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000200000001).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000200000002).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000200000003).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000300000001).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000300000002).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000400000001).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000400000002).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000400000003).
+4/26/2024 12:59:08 PM : Inserting entity with GID (0000000500000001).
+4/26/2024 12:59:09 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 12:59:09 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 1:02:19 PM : Applying  delta to network model.
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000100000004).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000100000005).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000100000006).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000200000004).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000200000005).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000200000006).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000300000003).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000300000004).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000400000004).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000400000005).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000400000006).
+4/26/2024 1:02:19 PM : Inserting entity with GID (0000000500000002).
+4/26/2024 1:02:19 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:02:19 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 1:41:11 PM : Starting Network Model Serivice...
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000100000001).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000100000002).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000100000003).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000200000001).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000200000002).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000200000003).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000300000001).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000300000002).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000400000001).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000400000002).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000400000003).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000500000001).
+4/26/2024 1:41:12 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:41:12 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000100000004).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000100000005).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000100000006).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000200000004).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000200000005).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000200000006).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000300000003).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000300000004).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000400000004).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000400000005).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000400000006).
+4/26/2024 1:41:12 PM : Inserting entity with GID (0000000500000002).
+4/26/2024 1:41:12 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:41:13 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:41:14 PM : The WCF service GenericDataAccess is ready.
+4/26/2024 1:41:14 PM : Endpoints:
+4/26/2024 1:41:14 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 1:41:14 PM : Connection string: ../NetworkModelData.data
+4/26/2024 1:41:14 PM : Trace level: Info
+4/26/2024 1:41:14 PM : The Network Model Service is started.
+4/26/2024 1:41:14 PM : Press <Enter> to stop the service.
+4/26/2024 1:41:18 PM : Applying  delta to network model.
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000100000007).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000100000008).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000100000009).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000200000007).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000200000008).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000200000009).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000300000005).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000300000006).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000400000007).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000400000008).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000400000009).
+4/26/2024 1:41:18 PM : Inserting entity with GID (0000000500000003).
+4/26/2024 1:41:18 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:41:18 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 1:46:00 PM : Starting Network Model Serivice...
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000100000001).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000100000002).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000100000003).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000200000001).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000200000002).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000200000003).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000300000001).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000300000002).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000400000001).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000400000002).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000400000003).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000500000001).
+4/26/2024 1:46:00 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:46:00 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000100000004).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000100000005).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000100000006).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000200000004).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000200000005).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000200000006).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000300000003).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000300000004).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000400000004).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000400000005).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000400000006).
+4/26/2024 1:46:00 PM : Inserting entity with GID (0000000500000002).
+4/26/2024 1:46:00 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:46:01 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000100000007).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000100000008).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000100000009).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000200000007).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000200000008).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000200000009).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000300000005).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000300000006).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000400000007).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000400000008).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000400000009).
+4/26/2024 1:46:01 PM : Inserting entity with GID (0000000500000003).
+4/26/2024 1:46:01 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:46:01 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 1:46:01 PM : The WCF service GenericDataAccess is ready.
+4/26/2024 1:46:01 PM : Endpoints:
+4/26/2024 1:46:01 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 1:46:01 PM : Connection string: ../NetworkModelData.data
+4/26/2024 1:46:01 PM : Trace level: Info
+4/26/2024 1:46:01 PM : The Network Model Service is started.
+4/26/2024 1:46:01 PM : Press <Enter> to stop the service.
+4/26/2024 2:06:09 PM : Applying  delta to network model.
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000010000000a).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000010000000b).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000010000000c).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000020000000a).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000020000000b).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000020000000c).
+4/26/2024 2:06:09 PM : Inserting entity with GID (0000000300000007).
+4/26/2024 2:06:09 PM : Inserting entity with GID (0000000300000008).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000040000000a).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000040000000b).
+4/26/2024 2:06:09 PM : Inserting entity with GID (000000040000000c).
+4/26/2024 2:06:09 PM : Inserting entity with GID (0000000500000004).
+4/26/2024 2:06:09 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:06:10 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 2:08:28 PM : Applying  delta to network model.
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000010000000d).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000010000000e).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000010000000f).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000020000000d).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000020000000e).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000020000000f).
+4/26/2024 2:08:28 PM : Inserting entity with GID (0000000300000009).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000030000000a).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000040000000d).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000040000000e).
+4/26/2024 2:08:28 PM : Inserting entity with GID (000000040000000f).
+4/26/2024 2:08:28 PM : Inserting entity with GID (0000000600000001).
+4/26/2024 2:08:28 PM : Inserting entity with GID (0000000600000002).
+4/26/2024 2:08:28 PM : Applying delta to network model successfully finished.
+4/26/2024 2:08:52 PM : Applying  delta to network model.
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000100000010).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000100000011).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000100000012).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000200000010).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000200000011).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000200000012).
+4/26/2024 2:08:52 PM : Inserting entity with GID (000000030000000b).
+4/26/2024 2:08:52 PM : Inserting entity with GID (000000030000000c).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000400000010).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000400000011).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000400000012).
+4/26/2024 2:08:52 PM : Inserting entity with GID (0000000500000005).
+4/26/2024 2:08:52 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:08:52 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 2:09:51 PM : Applying  delta to network model.
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000100000013).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000100000014).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000100000015).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000200000013).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000200000014).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000200000015).
+4/26/2024 2:09:51 PM : Inserting entity with GID (000000030000000d).
+4/26/2024 2:09:51 PM : Inserting entity with GID (000000030000000e).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000400000013).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000400000014).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000400000015).
+4/26/2024 2:09:51 PM : Inserting entity with GID (0000000500000006).
+4/26/2024 2:09:51 PM : Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:09:51 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 2:10:36 PM : Applying  delta to network model.
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000100000016).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000100000017).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000100000018).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000200000016).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000200000017).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000200000018).
+4/26/2024 2:10:36 PM : Inserting entity with GID (000000030000000f).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000300000010).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000400000016).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000400000017).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000400000018).
+4/26/2024 2:10:36 PM : Inserting entity with GID (0000000500000007).
+4/26/2024 2:10:36 PM : Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:10:36 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 2:12:02 PM : Getting values for resource with ID = 0x00000006ffffffff failed. Failed to get values for entity with GID = 0x00000006ffffffff. Entity  (GID = 0x00000006ffffffff) does not exist.
+4/26/2024 2:12:28 PM : Getting values for resource with ID = 0x00000001ffffffff failed. Failed to get values for entity with GID = 0x00000001ffffffff. Entity  (GID = 0x00000001ffffffff) does not exist.
+4/26/2024 2:15:56 PM : Starting Network Model Serivice...
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000001).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000002).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000003).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000001).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000002).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000003).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000001).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000002).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000001).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000002).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000003).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000500000001).
+4/26/2024 2:15:56 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000004).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000005).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000006).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000004).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000005).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000006).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000003).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000004).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000004).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000005).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000006).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000500000002).
+4/26/2024 2:15:56 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000007).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000008).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000009).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000007).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000008).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000009).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000005).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000006).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000007).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000008).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000400000009).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000500000003).
+4/26/2024 2:15:56 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000010000000a).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000010000000b).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000010000000c).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000020000000a).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000020000000b).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000020000000c).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000007).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000008).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000040000000a).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000040000000b).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000040000000c).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000500000004).
+4/26/2024 2:15:56 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000010000000d).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000010000000e).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000010000000f).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000020000000d).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000020000000e).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000020000000f).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000300000009).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000030000000a).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000040000000d).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000040000000e).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000040000000f).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000600000001).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000600000002).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000010).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000011).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000100000012).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000010).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000011).
+4/26/2024 2:15:56 PM : Inserting entity with GID (0000000200000012).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000030000000b).
+4/26/2024 2:15:56 PM : Inserting entity with GID (000000030000000c).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000010).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000011).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000012).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000500000005).
+4/26/2024 2:15:57 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:57 PM : Error while applying delta (id = 6) during service initialization. Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000100000013).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000100000014).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000100000015).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000200000013).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000200000014).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000200000015).
+4/26/2024 2:15:57 PM : Inserting entity with GID (000000030000000d).
+4/26/2024 2:15:57 PM : Inserting entity with GID (000000030000000e).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000013).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000014).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000015).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000500000006).
+4/26/2024 2:15:57 PM : Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:57 PM : Error while applying delta (id = 7) during service initialization. Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000100000016).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000100000017).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000100000018).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000200000016).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000200000017).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000200000018).
+4/26/2024 2:15:57 PM : Inserting entity with GID (000000030000000f).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000300000010).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000016).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000017).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000400000018).
+4/26/2024 2:15:57 PM : Inserting entity with GID (0000000500000007).
+4/26/2024 2:15:57 PM : Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:57 PM : Error while applying delta (id = 8) during service initialization. Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:15:57 PM : The WCF service GenericDataAccess is ready.
+4/26/2024 2:15:57 PM : Endpoints:
+4/26/2024 2:15:57 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 2:15:57 PM : Connection string: ../NetworkModelData.data
+4/26/2024 2:15:57 PM : Trace level: Info
+4/26/2024 2:15:57 PM : The Network Model Service is started.
+4/26/2024 2:15:57 PM : Press <Enter> to stop the service.
+4/26/2024 2:16:47 PM : Applying  delta to network model.
+4/26/2024 2:16:47 PM : Inserting entity with GID (0000000100000019).
+4/26/2024 2:16:47 PM : Inserting entity with GID (000000010000001a).
+4/26/2024 2:16:47 PM : Inserting entity with GID (000000010000001b).
+4/26/2024 2:16:47 PM : Inserting entity with GID (0000000200000019).
+4/26/2024 2:16:47 PM : Inserting entity with GID (000000020000001a).
+4/26/2024 2:16:47 PM : Inserting entity with GID (000000020000001b).
+4/26/2024 2:16:47 PM : Inserting entity with GID (0000000300000011).
+4/26/2024 2:16:47 PM : Inserting entity with GID (0000000300000012).
+4/26/2024 2:16:47 PM : Inserting entity with GID (0000000400000019).
+4/26/2024 2:16:47 PM : Inserting entity with GID (000000040000001a).
+4/26/2024 2:16:47 PM : Inserting entity with GID (000000040000001b).
+4/26/2024 2:16:47 PM : Inserting entity with GID (0000000500000008).
+4/26/2024 2:16:47 PM : Failed to insert entity (GID = 0x0000000500000008) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:16:47 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000008) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 2:18:42 PM : Starting Network Model Serivice...
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000100000001).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000100000002).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000100000003).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000200000001).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000200000002).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000200000003).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000300000001).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000300000002).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000400000001).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000400000002).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000400000003).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000500000001).
+4/26/2024 2:18:42 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:42 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000100000004).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000100000005).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000100000006).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000200000004).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000200000005).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000200000006).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000300000003).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000300000004).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000400000004).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000400000005).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000400000006).
+4/26/2024 2:18:42 PM : Inserting entity with GID (0000000500000002).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000007).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000008).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000009).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000007).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000008).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000009).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000005).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000006).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000007).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000008).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000009).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000500000003).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000000a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000000b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000000c).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000000a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000000b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000000c).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000007).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000008).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000000a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000000b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000000c).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000500000004).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000000d).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000000e).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000000f).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000000d).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000000e).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000000f).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000009).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000030000000a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000000d).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000000e).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000000f).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000600000001).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000600000002).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000010).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000011).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000012).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000010).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000011).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000012).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000030000000b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000030000000c).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000010).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000011).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000012).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000500000005).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 6) during service initialization. Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000013).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000014).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000015).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000013).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000014).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000015).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000030000000d).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000030000000e).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000013).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000014).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000015).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000500000006).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 7) during service initialization. Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000016).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000017).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000018).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000016).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000017).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000018).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000030000000f).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000010).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000016).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000017).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000018).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000500000007).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 8) during service initialization. Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000100000019).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000001a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000010000001b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000200000019).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000001a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000020000001b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000011).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000300000012).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000400000019).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000001a).
+4/26/2024 2:18:43 PM : Inserting entity with GID (000000040000001b).
+4/26/2024 2:18:43 PM : Inserting entity with GID (0000000500000008).
+4/26/2024 2:18:43 PM : Failed to insert entity (GID = 0x0000000500000008) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : Error while applying delta (id = 9) during service initialization. Failed to insert entity (GID = 0x0000000500000008) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:43 PM : The WCF service GenericDataAccess is ready.
+4/26/2024 2:18:43 PM : Endpoints:
+4/26/2024 2:18:43 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 2:18:43 PM : Connection string: ../NetworkModelData.data
+4/26/2024 2:18:43 PM : Trace level: Info
+4/26/2024 2:18:43 PM : The Network Model Service is started.
+4/26/2024 2:18:43 PM : Press <Enter> to stop the service.
+4/26/2024 2:18:54 PM : Applying  delta to network model.
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000010000001c).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000010000001d).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000010000001e).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000020000001c).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000020000001d).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000020000001e).
+4/26/2024 2:18:54 PM : Inserting entity with GID (0000000300000013).
+4/26/2024 2:18:54 PM : Inserting entity with GID (0000000300000014).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000040000001c).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000040000001d).
+4/26/2024 2:18:54 PM : Inserting entity with GID (000000040000001e).
+4/26/2024 2:18:54 PM : Inserting entity with GID (0000000500000009).
+4/26/2024 2:18:54 PM : Failed to insert entity (GID = 0x0000000500000009) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:18:54 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000009) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..
+4/26/2024 2:24:40 PM : Starting Network Model Serivice...
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000001).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000002).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000003).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000200000001).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000200000002).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000200000003).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000300000001).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000300000002).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000400000001).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000400000002).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000400000003).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000500000001).
+4/26/2024 2:24:40 PM : Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:40 PM : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000004).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000005).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000006).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000200000004).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000200000005).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000200000006).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000300000003).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000300000004).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000400000004).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000400000005).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000400000006).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000500000002).
+4/26/2024 2:24:40 PM : Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:40 PM : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000007).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000008).
+4/26/2024 2:24:40 PM : Inserting entity with GID (0000000100000009).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000200000007).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000200000008).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000200000009).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000300000005).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000300000006).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000400000007).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000400000008).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000400000009).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000500000003).
+4/26/2024 2:24:41 PM : Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:41 PM : Error while applying delta (id = 3) during service initialization. Failed to insert entity (GID = 0x0000000500000003) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000010000000a).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000010000000b).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000010000000c).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000020000000a).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000020000000b).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000020000000c).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000300000007).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000300000008).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000040000000a).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000040000000b).
+4/26/2024 2:24:41 PM : Inserting entity with GID (000000040000000c).
+4/26/2024 2:24:41 PM : Inserting entity with GID (0000000500000004).
+4/26/2024 2:24:43 PM : Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Error while applying delta (id = 4) during service initialization. Failed to insert entity (GID = 0x0000000500000004) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000010000000d).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000010000000e).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000010000000f).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000020000000d).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000020000000e).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000020000000f).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000300000009).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000030000000a).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000040000000d).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000040000000e).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000040000000f).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000600000001).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000600000002).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000010).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000011).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000012).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000010).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000011).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000012).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000030000000b).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000030000000c).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000010).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000011).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000012).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000500000005).
+4/26/2024 2:24:43 PM : Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Error while applying delta (id = 6) during service initialization. Failed to insert entity (GID = 0x0000000500000005) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000013).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000014).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000015).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000013).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000014).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000015).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000030000000d).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000030000000e).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000013).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000014).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000015).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000500000006).
+4/26/2024 2:24:43 PM : Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Error while applying delta (id = 7) during service initialization. Failed to insert entity (GID = 0x0000000500000006) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000016).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000017).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000018).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000016).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000017).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000200000018).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000030000000f).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000300000010).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000016).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000017).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000400000018).
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000500000007).
+4/26/2024 2:24:43 PM : Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Error while applying delta (id = 8) during service initialization. Failed to insert entity (GID = 0x0000000500000007) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:43 PM : Inserting entity with GID (0000000100000019).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000010000001a).
+4/26/2024 2:24:43 PM : Inserting entity with GID (000000010000001b).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000200000019).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000020000001a).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000020000001b).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000300000011).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000300000012).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000400000019).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000040000001a).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000040000001b).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000500000008).
+4/26/2024 2:24:44 PM : Failed to insert entity (GID = 0x0000000500000008) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:44 PM : Error while applying delta (id = 9) during service initialization. Failed to insert entity (GID = 0x0000000500000008) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000010000001c).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000010000001d).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000010000001e).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000020000001c).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000020000001d).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000020000001e).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000300000013).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000300000014).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000040000001c).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000040000001d).
+4/26/2024 2:24:44 PM : Inserting entity with GID (000000040000001e).
+4/26/2024 2:24:44 PM : Inserting entity with GID (0000000500000009).
+4/26/2024 2:24:44 PM : Failed to insert entity (GID = 0x0000000500000009) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:44 PM : Error while applying delta (id = 10) during service initialization. Failed to insert entity (GID = 0x0000000500000009) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:44 PM : The WCF service GenericDataAccess is ready.
+4/26/2024 2:24:44 PM : Endpoints:
+4/26/2024 2:24:44 PM : net.tcp://localhost:10000/NetworkModelService/GDA/
+4/26/2024 2:24:44 PM : Connection string: ../NetworkModelData.data
+4/26/2024 2:24:44 PM : Trace level: Info
+4/26/2024 2:24:44 PM : The Network Model Service is started.
+4/26/2024 2:24:44 PM : Press <Enter> to stop the service.
+4/26/2024 2:24:45 PM : Applying  delta to network model.
+4/26/2024 2:24:46 PM : Inserting entity with GID (000000010000001f).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000100000020).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000100000021).
+4/26/2024 2:24:46 PM : Inserting entity with GID (000000020000001f).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000200000020).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000200000021).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000300000015).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000300000016).
+4/26/2024 2:24:46 PM : Inserting entity with GID (000000040000001f).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000400000020).
+4/26/2024 2:24:46 PM : Inserting entity with GID (0000000400000021).
+4/26/2024 2:24:46 PM : Inserting entity with GID (000000050000000a).
+4/26/2024 2:24:46 PM : Failed to insert entity (GID = 0x000000050000000a) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
+4/26/2024 2:24:46 PM : Applying delta to network model failed. Failed to insert entity (GID = 0x000000050000000a) into model. Index (zero based) must be greater than or equal to zero and less than the size of the argument list..

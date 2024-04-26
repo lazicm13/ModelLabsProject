@@ -93,8 +93,8 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 			ImportLines();
 			ImportSeriesCompensators();
 			ImportDCLineSegments();
-			ImportACLineSegments();
 			ImportPerLengthSequenceImpedances();
+			ImportACLineSegments();
 
 			LogManager.Log("Loading elements and creating delta completed.", LogLevel.Info);
 		}
@@ -308,6 +308,7 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 			SortedDictionary<string, object> cimPerLengthSequenceImpedances = concreteModel.GetAllObjectsOfType("FTN.PerLengthSequenceImpedance");
 			if (cimPerLengthSequenceImpedances != null)
 			{
+				
 				foreach (KeyValuePair<string, object> cimPerLengthSequenceImpedancePair in cimPerLengthSequenceImpedances)
 				{
 					FTN.PerLengthSequenceImpedance cimPerLengthSequenceImpedance = cimPerLengthSequenceImpedancePair.Value as FTN.PerLengthSequenceImpedance;

@@ -1,0 +1,205 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="15">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="SUBGEOGRAPHICALREGION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SGR_01" />
+            <Property id="IDOBJ_NAME" value="SGR1" />
+            <Property id="IDOBJ_DESCRIPTION" value="SGR" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffe" type="SUBGEOGRAPHICALREGION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SGR_02" />
+            <Property id="IDOBJ_NAME" value="SGR2" />
+            <Property id="IDOBJ_DESCRIPTION" value="SGR" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffd" type="SUBGEOGRAPHICALREGION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SGR_03" />
+            <Property id="IDOBJ_NAME" value="SGR3" />
+            <Property id="IDOBJ_DESCRIPTION" value="SGR" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="LINE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="L_01" />
+            <Property id="IDOBJ_NAME" value="L1" />
+            <Property id="IDOBJ_DESCRIPTION" value="L" />
+            <Property id="LINE_REGION" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="LINE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="L_02" />
+            <Property id="IDOBJ_NAME" value="L2" />
+            <Property id="IDOBJ_DESCRIPTION" value="L" />
+            <Property id="LINE_REGION" value="0x00000001fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffd" type="LINE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="L_03" />
+            <Property id="IDOBJ_NAME" value="L3" />
+            <Property id="IDOBJ_DESCRIPTION" value="L" />
+            <Property id="LINE_REGION" value="0x00000001fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="SERIESCOMPENSATOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SC_01" />
+            <Property id="IDOBJ_NAME" value="SC1" />
+            <Property id="IDOBJ_DESCRIPTION" value="SC" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002ffffffff" />
+            <Property id="SERIES_COMPENSATOR_R" value="1.1" />
+            <Property id="SERIES_COMPENSATOR_R0" value="11.1" />
+            <Property id="SERIES_COMPENSATOR_X" value="111.1" />
+            <Property id="SERIES_COMPENSATOR_X0" value="1111.1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="SERIESCOMPENSATOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SC_02" />
+            <Property id="IDOBJ_NAME" value="SC2" />
+            <Property id="IDOBJ_DESCRIPTION" value="SC" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002fffffffe" />
+            <Property id="SERIES_COMPENSATOR_R" value="2.2" />
+            <Property id="SERIES_COMPENSATOR_R0" value="22.2" />
+            <Property id="SERIES_COMPENSATOR_X" value="222.2" />
+            <Property id="SERIES_COMPENSATOR_X0" value="2222.2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="DCLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="LS1" />
+            <Property id="IDOBJ_NAME" value="LS1" />
+            <Property id="IDOBJ_DESCRIPTION" value="DLS" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002ffffffff" />
+            <Property id="CONDUCTOR_LENGTH" value="111" />
+            <Property id="DC_LINE_SEGMENT_INDUCTANCE" value="1.1" />
+            <Property id="DC_LINE_SEGMENT_RESISTANCE" value="11.1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="DCLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DLS_02" />
+            <Property id="IDOBJ_NAME" value="DLS2" />
+            <Property id="IDOBJ_DESCRIPTION" value="DLS" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002fffffffe" />
+            <Property id="CONDUCTOR_LENGTH" value="222" />
+            <Property id="DC_LINE_SEGMENT_INDUCTANCE" value="2.2" />
+            <Property id="DC_LINE_SEGMENT_RESISTANCE" value="22.2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffd" type="DCLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DLS_03" />
+            <Property id="IDOBJ_NAME" value="DLS3" />
+            <Property id="IDOBJ_DESCRIPTION" value="DLS" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002fffffffd" />
+            <Property id="CONDUCTOR_LENGTH" value="333" />
+            <Property id="DC_LINE_SEGMENT_INDUCTANCE" value="3.3" />
+            <Property id="DC_LINE_SEGMENT_RESISTANCE" value="33.3" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="PERLENGTHSEQUENCEIMPEDANCE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PLSI_01" />
+            <Property id="IDOBJ_NAME" value="PLSI1" />
+            <Property id="IDOBJ_DESCRIPTION" value="PLSI" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_B0CH" value="1.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_BCH" value="11.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_G0CH" value="111.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_GCH" value="1111.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_R" value="1.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_R0" value="11.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_X" value="111.1" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_X0" value="1111.1" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffe" type="PERLENGTHSEQUENCEIMPEDANCE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="PLSI_02" />
+            <Property id="IDOBJ_NAME" value="PLSI2" />
+            <Property id="IDOBJ_DESCRIPTION" value="PLSI" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_B0CH" value="2.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_BCH" value="22.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_G0CH" value="222.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_GCH" value="2222.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_R" value="2.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_R0" value="22.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_X" value="222.2" />
+            <Property id="PER_LENGTH_SEQ_IMPEDANCE_X0" value="222.2" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="ACLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ALS_01" />
+            <Property id="IDOBJ_NAME" value="ALS1" />
+            <Property id="IDOBJ_DESCRIPTION" value="ALS" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002ffffffff" />
+            <Property id="CONDUCTOR_LENGTH" value="111" />
+            <Property id="AC_LINE_SEGMENT_B0CH" value="1.1" />
+            <Property id="AC_LINE_SEGMENT_BCH" value="11.1" />
+            <Property id="AC_LINE_SEGMENT_G0CH" value="111.1" />
+            <Property id="AC_LINE_SEGMENT_GCH" value="1111.1" />
+            <Property id="AC_LINE_SEGMENT_R" value="1.1" />
+            <Property id="AC_LINE_SEGMENT_R0" value="11.1" />
+            <Property id="AC_LINE_SEGMENT_X" value="111.1" />
+            <Property id="AC_LINE_SEGMENT_X0" value="1111.1" />
+            <Property id="AC_LINE_SEGMENT_PERLENGTHIMP" value="0x00000006ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffe" type="ACLINESEGMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ALS_02" />
+            <Property id="IDOBJ_NAME" value="ALS2" />
+            <Property id="IDOBJ_DESCRIPTION" value="ALS" />
+            <Property id="EQUIPMENT_AGGREGATE" value="1" />
+            <Property id="EQUIPMENT_NORM_IN_SERV" value="1" />
+            <Property id="EQUIPMENT_EQUIPCONT" value="0x00000002fffffffe" />
+            <Property id="CONDUCTOR_LENGTH" value="222" />
+            <Property id="AC_LINE_SEGMENT_B0CH" value="2.2" />
+            <Property id="AC_LINE_SEGMENT_BCH" value="22.2" />
+            <Property id="AC_LINE_SEGMENT_G0CH" value="222.2" />
+            <Property id="AC_LINE_SEGMENT_GCH" value="2222.2" />
+            <Property id="AC_LINE_SEGMENT_R" value="2.2" />
+            <Property id="AC_LINE_SEGMENT_R0" value="22.2" />
+            <Property id="AC_LINE_SEGMENT_X" value="222.2" />
+            <Property id="AC_LINE_SEGMENT_X0" value="2222.2" />
+            <Property id="AC_LINE_SEGMENT_PERLENGTHIMP" value="0x00000006fffffffe" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>
