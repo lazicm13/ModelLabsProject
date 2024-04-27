@@ -1,0 +1,16 @@
+4/27/2024 1:39:08 PM : Getting extent values for all DMS types started.
+4/27/2024 1:39:11 PM : Number of SUBGEOGRAPHICALREGION in model 38.
+4/27/2024 1:39:12 PM : Number of LINE in model 76.
+4/27/2024 1:39:13 PM : Number of SERIESCOMPENSATOR in model 102.
+4/27/2024 1:39:14 PM : Number of DCLINESEGMENT in model 140.
+4/27/2024 1:39:15 PM : Number of ACLINESEGMENT in model 153.
+4/27/2024 1:39:17 PM : Getting extent values for all DMS types failed for type PERLENGTHSEQUENCEIMPEDANCE.
+	IteratorNext failed. Iterator ID = 6. Resources to fetch count = 1000. Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000600000001. Unknown property id = PER_LENGTH_IMPEDANCE_ACLSEG for entity (GID = 0x0000000600000001). 
+4/27/2024 2:06:36 PM : Getting extent values for all DMS types started.
+4/27/2024 2:06:38 PM : Number of SUBGEOGRAPHICALREGION in model 41.
+4/27/2024 2:06:39 PM : Number of LINE in model 82.
+4/27/2024 2:06:40 PM : Number of SERIESCOMPENSATOR in model 110.
+4/27/2024 2:06:41 PM : Number of DCLINESEGMENT in model 151.
+4/27/2024 2:06:42 PM : Number of ACLINESEGMENT in model 165.
+4/27/2024 2:06:42 PM : Number of PERLENGTHSEQUENCEIMPEDANCE in model 169.
+4/27/2024 2:06:42 PM : Getting extent values for all DMS types successfully ended.

@@ -115,3 +115,4 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
     }
 }
+        

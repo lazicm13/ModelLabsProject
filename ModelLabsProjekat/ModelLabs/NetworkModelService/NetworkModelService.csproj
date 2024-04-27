@@ -52,10 +52,6 @@
     <DefineConstants>TRACE;DEBUG</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Ionic.Zip" Condition="'$(Platform)'=='x86'">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\Common\3rdPartyLibs\x86\Ionic.Zip.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core">

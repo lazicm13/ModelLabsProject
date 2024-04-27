@@ -19,3 +19,9 @@ C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\Mode
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.csproj.CoreCompileInputs.cache
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.dll
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.pdb
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\CIMParser.dll
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\CIMParser.pdb
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.dll
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\CIMParser\obj\x86\Debug\CIMParser.pdb

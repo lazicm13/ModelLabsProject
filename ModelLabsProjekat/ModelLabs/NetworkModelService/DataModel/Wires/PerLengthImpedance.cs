@@ -13,18 +13,16 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 
 		private List<long> acLineSegments = new List<long>();
 
-		public List<long> AcLineSegments
-		{
-			get { return acLineSegments; }
-			set { acLineSegments = value; }
-		}
+		public List<long> AcLineSegments { get => acLineSegments; set => acLineSegments = value; }
+
+
 
 		public override bool Equals(object obj)
 		{
 			if (base.Equals(obj))
 			{
 				PerLengthImpedance x = (PerLengthImpedance)obj;
-				return CompareHelper.CompareLists(x.acLineSegments, this.acLineSegments, true);
+				return CompareHelper.CompareLists(x.AcLineSegments, this.AcLineSegments, true);
 			}
 			else
 			{
@@ -54,7 +52,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 		{
 			switch (property.Id)
 			{
-				case ModelCode.PER_LENGTH_IMPEDANCE:
+				case ModelCode.PER_LENGTH_IMPEDANCE_ACLSEG:
 					property.SetValue(this.AcLineSegments);
 					break;
 				default:
@@ -75,15 +73,16 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 		{
 			get
 			{
-				return (acLineSegments.Count > 0) || base.IsReferenced;
+				return (AcLineSegments.Count > 0) || base.IsReferenced;
 			}
 		}
 
-		public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
+
+        public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
 		{
-			if (acLineSegments != null && acLineSegments.Count > 0 && (refType == TypeOfReference.Target || refType == TypeOfReference.Both))
+			if (AcLineSegments != null && AcLineSegments.Count > 0 && (refType == TypeOfReference.Target || refType == TypeOfReference.Both))
 			{
-				references[ModelCode.PER_LENGTH_IMPEDANCE_ACLSEG] = acLineSegments.GetRange(0, acLineSegments.Count);
+				references[ModelCode.PER_LENGTH_IMPEDANCE_ACLSEG] = AcLineSegments.GetRange(0, AcLineSegments.Count);
 			}
 
 			base.GetReferences(references, refType);
@@ -109,9 +108,9 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
 			{
 				case ModelCode.AC_LINE_SEGMENT_PERLENGTHIMP:
 
-					if (acLineSegments.Contains(globalId))
+					if (AcLineSegments.Contains(globalId))
 					{
-						acLineSegments.Remove(globalId);
+						AcLineSegments.Remove(globalId);
 					}
 					else
 					{

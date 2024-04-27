@@ -42,3 +42,11 @@ C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\Mode
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.csproj.CopyComplete
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.exe
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.pdb
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.exe.config
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.exe
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\NMSTestClient.pdb
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.csproj.CopyComplete
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.exe
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\obj\x86\Debug\NMSTestClient.pdb

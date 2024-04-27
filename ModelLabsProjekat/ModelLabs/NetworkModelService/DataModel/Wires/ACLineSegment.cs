@@ -103,7 +103,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
                     property.SetValue(this.R0);
                     break;
                 case ModelCode.AC_LINE_SEGMENT_PERLENGTHIMP:
-                    property.SetValue(this.PerLengthImpedance);
+                    property.SetValue(perLengthImpedance);
                     break;
                 default:
                     base.GetProperty(property);
@@ -140,7 +140,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
                     this.R0 = property.AsFloat();
                     break;
                 case ModelCode.AC_LINE_SEGMENT_PERLENGTHIMP:
-                    this.PerLengthImpedance = property.AsReference();
+                    perLengthImpedance = property.AsReference();
                     break;
                 default:
                     base.SetProperty(property);

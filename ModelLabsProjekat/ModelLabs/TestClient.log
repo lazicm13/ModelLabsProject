@@ -25,3 +25,106 @@
 4/26/2024 2:13:20 PM : Getting extent values method started.
 4/26/2024 2:13:20 PM : Getting extent values method failed for 6.
 	Invalid Model Code: 6
+4/27/2024 12:17:37 PM : Network Model Service Test Client is up and running...
+4/27/2024 12:17:37 PM : Result directory: ../Results
+4/27/2024 12:18:09 PM : Getting extent values method started.
+4/27/2024 12:18:10 PM : Getting extent values method failed for 5.
+	Invalid Model Code: 5
+4/27/2024 12:18:50 PM : Getting extent values method started.
+4/27/2024 12:18:52 PM : Getting extent values method successfully finished.
+4/27/2024 12:27:28 PM : Network Model Service Test Client is up and running...
+4/27/2024 12:27:28 PM : Result directory: ../Results
+4/27/2024 12:28:07 PM : Getting values method started.
+4/27/2024 12:28:07 PM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:28:07 PM : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:28:11 PM : Getting values method started.
+4/27/2024 12:28:11 PM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:28:11 PM : Getting values method for entered id = 2 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:28:28 PM : Getting related values method started.
+4/27/2024 12:28:28 PM : Getting related values method  failed for sourceGlobalId = 1 and association (propertyId = 1, type = 1). Reason: There was an error while trying to serialize parameter http://tempuri.org/:association. The InnerException message was 'Enum value '1' is invalid for type 'FTN.Common.ModelCode' and cannot be serialized. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+4/27/2024 12:28:37 PM : Getting extent values method started.
+4/27/2024 12:28:37 PM : Getting extent values method failed for 3.
+	Invalid Model Code: 3
+4/27/2024 12:30:05 PM : Getting values method started.
+4/27/2024 12:30:05 PM : Getting values method for entered id = 12884901887 failed.
+	Getting values for resource with ID = 0x00000002ffffffff failed. Failed to get values for entity with GID = 0x00000002ffffffff. Entity  (GID = 0x00000002ffffffff) does not exist.
+4/27/2024 12:31:06 PM : Getting values method started.
+4/27/2024 12:31:06 PM : Getting values method for entered id = 17179869183 failed.
+	Getting values for resource with ID = 0x00000003ffffffff failed. Failed to get values for entity with GID = 0x00000003ffffffff. Entity  (GID = 0x00000003ffffffff) does not exist.
+4/27/2024 12:31:35 PM : Getting values method started.
+4/27/2024 12:31:36 PM : Getting values method for entered id = 17179869183 failed.
+	Getting values for resource with ID = 0x00000003ffffffff failed. Failed to get values for entity with GID = 0x00000003ffffffff. Entity  (GID = 0x00000003ffffffff) does not exist.
+4/27/2024 12:35:29 PM : Getting values method started.
+4/27/2024 12:35:29 PM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:35:29 PM : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:35:36 PM : Getting values method started.
+4/27/2024 12:35:36 PM : Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:35:36 PM : Getting values method for entered id = 33 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+4/27/2024 12:43:52 PM : Getting values method started.
+4/27/2024 12:43:52 PM : Getting values method for entered id = 8589934591 failed.
+	Getting values for resource with ID = 0x00000001ffffffff failed. Failed to get values for entity with GID = 0x00000001ffffffff. Entity  (GID = 0x00000001ffffffff) does not exist.
+4/27/2024 12:44:16 PM : Apply update method started.
+4/27/2024 12:44:16 PM : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000025
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000025
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x0000000300000019
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000025
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000c
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000003
+
+4/27/2024 12:44:41 PM : Getting values method started.
+4/27/2024 12:44:41 PM : Getting values method for entered id = 25769803779 failed.
+	Getting values for resource with ID = 0x0000000600000003 failed. Failed to get values for entity with GID = 0x0000000600000003. Unknown property id = PER_LENGTH_IMPEDANCE_ACLSEG for entity (GID = 0x0000000600000003).
+4/27/2024 12:45:15 PM : Getting values method started.
+4/27/2024 12:45:15 PM : Getting values method successfully finished.
+4/27/2024 12:46:09 PM : Getting values method started.
+4/27/2024 12:46:09 PM : Getting values method successfully finished.
+4/27/2024 12:46:33 PM : Getting values method started.
+4/27/2024 12:46:33 PM : Getting values method successfully finished.
+4/27/2024 12:47:46 PM : Entering association failed. System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt64(String value, NumberStyles options, NumberFormatInfo numfmt)
+   at System.Int64.Parse(String s)
+   at FTN.Services.NetworkModelService.TestClient.Program.InputAssociation() in C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\Test\NMSTestClient\Program.cs:line 254
+4/27/2024 12:47:46 PM : GetRelatedValues failed. Input string was not in a correct format.
+4/27/2024 12:47:59 PM : Getting related values method started.
+4/27/2024 12:47:59 PM : Getting related values method  failed for sourceGlobalId = 1 and association (propertyId = 1, type = 1). Reason: There was an error while trying to serialize parameter http://tempuri.org/:association. The InnerException message was 'Enum value '1' is invalid for type 'FTN.Common.ModelCode' and cannot be serialized. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+4/27/2024 12:48:02 PM : Getting extent values method started.
+4/27/2024 12:48:02 PM : Getting extent values method failed for 2.
+	Invalid Model Code: 2
+4/27/2024 12:57:14 PM : Network Model Service Test Client is up and running...
+4/27/2024 12:57:14 PM : Result directory: ../Results
+4/27/2024 12:57:28 PM : Apply update method started.
+4/27/2024 12:57:28 PM : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x0000000100000026
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x0000000200000026
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000001a
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x0000000400000026
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000d
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000004
+
+4/27/2024 12:57:44 PM : Getting values method started.
+4/27/2024 12:57:44 PM : Getting values method successfully finished.
+4/27/2024 12:58:09 PM : Getting values method started.
+4/27/2024 12:58:09 PM : Getting values method successfully finished.
+4/27/2024 12:59:13 PM : Getting extent values method started.
+4/27/2024 12:59:13 PM : Getting extent values method failed for PER_LENGTH_SEQ_IMPEDANCE.
+	IteratorNext failed. Iterator ID = 1. Resources to fetch count = 2. Failed to get next set of ResourceDescription iterators. Failed to get values for entity with GID = 0x0000000600000001. Unknown property id = PER_LENGTH_IMPEDANCE_ACLSEG for entity (GID = 0x0000000600000001). 
+4/27/2024 12:59:50 PM : Getting extent values method started.
+4/27/2024 12:59:50 PM : Getting extent values method successfully finished.
+4/27/2024 1:00:25 PM : Getting extent values method started.
+4/27/2024 1:00:26 PM : Getting extent values method successfully finished.
+4/27/2024 1:03:19 PM : Getting related values method started.
+4/27/2024 1:03:19 PM : Getting related values method  failed for sourceGlobalId = 8589934630 and association (propertyId = IDOBJ_GID, type = 1). Reason: There was an error while trying to serialize parameter http://tempuri.org/:association. The InnerException message was 'Enum value '1' is invalid for type 'FTN.Common.ModelCode' and cannot be serialized. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
+4/27/2024 1:04:04 PM : Getting related values method started.
+4/27/2024 1:04:04 PM : Getting related values method  failed for sourceGlobalId = 8589934630 and association (propertyId = IDOBJ_GID, type = LINE). Reason: Getting related values for resource with ID = 0x0000000200000026 failed. Failed to get related values for source GID = 0x0000000200000026. Association propertyId = IDOBJ_GID is not reference or reference vector type..

@@ -20,3 +20,10 @@ C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\Mode
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\NetworkModelService.csproj.CopyComplete
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\FTN.Services.NetworkModelService.dll
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Project\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\FTN.Services.NetworkModelService.pdb
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\FTN.Services.NetworkModelService.dll
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\bin\FTN.Services.NetworkModelService.pdb
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\NetworkModelService.csproj.AssemblyReference.cache
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\NetworkModelService.csproj.CoreCompileInputs.cache
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\NetworkModelService.csproj.CopyComplete
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\FTN.Services.NetworkModelService.dll
+C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\NetworkModelService\obj\x86\Debug\FTN.Services.NetworkModelService.pdb

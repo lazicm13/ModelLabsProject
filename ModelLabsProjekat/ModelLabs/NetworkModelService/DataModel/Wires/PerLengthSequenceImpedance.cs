@@ -21,8 +21,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
         private float r0;
         private float x;
         private float x0;
-        private long perLengthImpedance;
-
         public float B0ch { get => b0ch; set => b0ch = value; }
         public float Bch { get => bch; set => bch = value; }
         public float G0ch { get => g0ch; set => g0ch = value; }
@@ -43,8 +41,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
                    r == imp.r &&
                    r0 == imp.r0 &&
                    x == imp.x &&
-                   x0 == imp.x0 &&
-                   perLengthImpedance == imp.perLengthImpedance;
+                   x0 == imp.x0;
         }
 
         public override int GetHashCode()
