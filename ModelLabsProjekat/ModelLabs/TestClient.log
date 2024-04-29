@@ -128,3 +128,43 @@ Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000004
 4/27/2024 1:03:19 PM : Getting related values method  failed for sourceGlobalId = 8589934630 and association (propertyId = IDOBJ_GID, type = 1). Reason: There was an error while trying to serialize parameter http://tempuri.org/:association. The InnerException message was 'Enum value '1' is invalid for type 'FTN.Common.ModelCode' and cannot be serialized. Ensure that the necessary enum values are present and are marked with EnumMemberAttribute attribute if the type has DataContractAttribute attribute.'.  Please see InnerException for more details.
 4/27/2024 1:04:04 PM : Getting related values method started.
 4/27/2024 1:04:04 PM : Getting related values method  failed for sourceGlobalId = 8589934630 and association (propertyId = IDOBJ_GID, type = LINE). Reason: Getting related values for resource with ID = 0x0000000200000026 failed. Failed to get related values for source GID = 0x0000000200000026. Association propertyId = IDOBJ_GID is not reference or reference vector type..
+4/29/2024 11:50:31 AM : Network Model Service Test Client is up and running...
+4/29/2024 11:50:32 AM : Result directory: ../Results
+4/29/2024 11:51:03 AM : Apply update method started.
+4/29/2024 11:51:04 AM : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x000000010000002a
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x000000020000002a
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000001d
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x000000040000002a
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x000000050000000f
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000005
+
+4/29/2024 11:51:30 AM : Getting values method started.
+4/29/2024 11:51:30 AM : Getting values method successfully finished.
+4/29/2024 11:52:25 AM : Entering entity id failed. Please use hex (0x) or decimal format.
+4/29/2024 11:52:25 AM : GetValues failed. Input string was not in a correct format.
+4/29/2024 11:52:41 AM : Getting values method started.
+4/29/2024 11:52:41 AM : Getting values method successfully finished.
+4/29/2024 11:53:19 AM : Getting values method started.
+4/29/2024 11:53:19 AM : Getting values method successfully finished.
+4/29/2024 11:53:48 AM : Getting values method started.
+4/29/2024 11:53:49 AM : Getting values method successfully finished.
+4/29/2024 11:54:10 AM : Getting values method started.
+4/29/2024 11:54:10 AM : Getting values method successfully finished.
+4/29/2024 1:14:01 PM : Network Model Service Test Client is up and running...
+4/29/2024 1:14:01 PM : Result directory: ../Results
+4/29/2024 1:14:25 PM : Apply update method started.
+4/29/2024 1:14:25 PM : Apply update method finished. 
+Update result: Succeeded
+Message: Applying delta to network model successfully finished.
+GlobalId pairs:
+Client globalId: 0x00000001ffffffff	 - Server globalId: 0x000000010000002b
+Client globalId: 0x00000002ffffffff	 - Server globalId: 0x000000020000002b
+Client globalId: 0x00000003ffffffff	 - Server globalId: 0x000000030000001e
+Client globalId: 0x00000004ffffffff	 - Server globalId: 0x000000040000002b
+Client globalId: 0x00000005ffffffff	 - Server globalId: 0x0000000500000010
+Client globalId: 0x00000006ffffffff	 - Server globalId: 0x0000000600000006
+

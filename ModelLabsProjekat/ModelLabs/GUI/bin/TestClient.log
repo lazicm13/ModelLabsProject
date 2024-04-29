@@ -14,3 +14,27 @@
 4/27/2024 2:06:42 PM : Number of ACLINESEGMENT in model 165.
 4/27/2024 2:06:42 PM : Number of PERLENGTHSEQUENCEIMPEDANCE in model 169.
 4/27/2024 2:06:42 PM : Getting extent values for all DMS types successfully ended.
+4/29/2024 1:28:09 PM : Getting extent values for all DMS types started.
+4/29/2024 1:28:15 PM : Getting extent values for all DMS types failed for type SUBGEOGRAPHICALREGION.
+	Could not connect to net.tcp://localhost:10000/NetworkModelService/GDA/. The connection attempt lasted for a time span of 00:00:05.0539989. TCP error code 10061: No connection could be made because the target machine actively refused it 127.0.0.1:10000. 
+4/29/2024 1:32:58 PM : Getting extent values for all DMS types started.
+4/29/2024 1:33:06 PM : Getting extent values for all DMS types failed for type SUBGEOGRAPHICALREGION.
+	Could not connect to net.tcp://localhost:10000/NetworkModelService/GDA/. The connection attempt lasted for a time span of 00:00:05.6130009. TCP error code 10061: No connection could be made because the target machine actively refused it 127.0.0.1:10000. 
+4/29/2024 1:33:06 PM : FTN.Common.DMSType
+4/29/2024 1:56:00 PM : Getting extent values for all DMS types started.
+4/29/2024 1:56:08 PM : Getting extent values for all DMS types failed for type SUBGEOGRAPHICALREGION.
+	Could not connect to net.tcp://localhost:10000/NetworkModelService/GDA/. The connection attempt lasted for a time span of 00:00:05.1802558. TCP error code 10061: No connection could be made because the target machine actively refused it 127.0.0.1:10000. 
+4/29/2024 1:56:08 PM : FTN.Common.DMSType
+4/29/2024 4:06:12 PM : Getting extent values for all DMS types started.
+4/29/2024 4:06:18 PM : Getting extent values for all DMS types failed for type SUBGEOGRAPHICALREGION.
+	Could not connect to net.tcp://localhost:10000/NetworkModelService/GDA/. The connection attempt lasted for a time span of 00:00:04.8185551. TCP error code 10061: No connection could be made because the target machine actively refused it 127.0.0.1:10000. 
+4/29/2024 4:06:18 PM : FTN.Common.DMSType
+4/29/2024 4:08:39 PM : Getting extent values for all DMS types started.
+4/29/2024 4:08:39 PM : Number of SUBGEOGRAPHICALREGION in model 43.
+4/29/2024 4:08:40 PM : Number of LINE in model 86.
+4/29/2024 4:08:41 PM : Number of SERIESCOMPENSATOR in model 116.
+4/29/2024 4:08:41 PM : Number of DCLINESEGMENT in model 159.
+4/29/2024 4:08:42 PM : Number of ACLINESEGMENT in model 175.
+4/29/2024 4:08:43 PM : Number of PERLENGTHSEQUENCEIMPEDANCE in model 181.
+4/29/2024 4:08:43 PM : Getting extent values for all DMS types successfully ended.
+4/29/2024 4:08:43 PM : FTN.Common.DMSType

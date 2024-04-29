@@ -5,9 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="Project 68" Height="600" Width="850" Background="DarkGreen">
-    <Grid >
-        <TabControl Margin="0,0,430,0" Background="DarkGray">
+        Title="Project24" Height="591.733" Width="863.544" Background="#2F384D">
+    <Grid Margin="0,0,0,1" RenderTransformOrigin="0.528,0.501" Background="#2F384D" HorizontalAlignment="Left" Width="888">
+
+
+        <TabControl Margin="0,0,477,0" Background="DarkGray">
             <TabItem Background="DarkGray">
                 <TabItem.Header>
                     <StackPanel>
@@ -64,9 +66,10 @@
                 </Grid>
             </TabItem>
         </TabControl>
-
         <Label Content="OUTPUT:" HorizontalAlignment="Left" Height="24" Margin="416,28,0,0" VerticalAlignment="Top" Width="204" Foreground="LightGray"/>
-        <TextBlock x:Name="txtBlockOutput" Foreground="White" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="503" Margin="416,57,0,0" Background="Black"/>
+        <TextBlock x:Name="txtBlockOutput" Foreground="LightGray" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="424" Height="503" Margin="416,57,0,0" Background="#2F384D"/>
+
+
 
     </Grid>
 </Window>

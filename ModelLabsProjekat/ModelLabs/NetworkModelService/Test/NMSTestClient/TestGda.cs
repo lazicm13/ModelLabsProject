@@ -230,10 +230,10 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
             Console.WriteLine(message);
             CommonTrace.WriteTrace(CommonTrace.TraceInfo, message);
 
-            List<ModelCode> properties = new List<ModelCode>();
+            List<ModelCode> properties;
             List<long> ids = new List<long>();
 
-            int iteratorId = 0;
+            int iteratorId;
             int numberOfResources = 1000;
             DMSType currType = 0;
             try

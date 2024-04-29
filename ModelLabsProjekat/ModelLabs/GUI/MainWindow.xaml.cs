@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FTN.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using FTN.Common;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
 using TelventDMS.Services.NetworkModelService.TestClient.Tests;
-
 
 namespace GUI
 {
@@ -24,8 +25,10 @@ namespace GUI
         private List<long> allTypes;
         private const string noFilterMsg = "No filter";
         private TestGda tgda;
+
         public MainWindow()
         {
+            IntializeTestGda();
             InitializeComponent();
         }
 
@@ -35,10 +38,12 @@ namespace GUI
             tgda = new TestGda();
         }
 
+
         #region GetValues
+
         private void comboBoxIdSelect_Initialized(object sender, EventArgs e)
         {
-            //GetAllTypes(sender);
+            GetAllTypes(sender);
         }
 
         private void listBoxProperties_Initialized(object sender, EventArgs e)
@@ -72,6 +77,7 @@ namespace GUI
 
         #endregion GetValues
 
+
         #region GetExtentValues
 
         private void comboBoxModelSelect_Initialized(object sender, EventArgs e)
@@ -80,6 +86,7 @@ namespace GUI
 
             foreach (DMSType type in Enum.GetValues(typeof(DMSType))) //depends on DMSType and ModelCode having the same string name, mozda iskoristi GetModelCodeFromType
             {
+                CommonTrace.WriteTrace(true, typeof(DMSType).ToString());
                 if (type == DMSType.MASK_TYPE)
                     continue;
 
@@ -100,6 +107,7 @@ namespace GUI
             ModelResourcesDesc modelResources = new ModelResourcesDesc();
             listBoxPropertiesExtent.ItemsSource = modelResources.GetAllPropertyIds((ModelCode)comboBoxModelSelect.SelectedItem);
             listBoxPropertiesExtent.UnselectAll();
+            
         }
 
         private void btnExtentValues_Click(object sender, RoutedEventArgs e)
@@ -117,6 +125,7 @@ namespace GUI
         }
 
         #endregion GetExtentValues
+
 
         #region GetRelatedValues
 
@@ -137,6 +146,7 @@ namespace GUI
             List<string> modelCodes = new List<string>();
             modelCodes.Add(noFilterMsg);
 
+            
             foreach (DMSType type in Enum.GetValues(typeof(DMSType))) //depends on DMSType and ModelCode having the same string name, mozda iskoristi GetModelCodeFromType
             {
                 if (type == DMSType.MASK_TYPE)
@@ -243,7 +253,11 @@ namespace GUI
             }
 
         }
+
+
         #endregion GetRelatedValues
+
+
 
         private void GetAllTypes(object sender)
         {
@@ -257,13 +271,12 @@ namespace GUI
                 {
                     allTypes = tgda.TestGetExtentValuesAllTypes();
                 }
-                catch(Exception e)
+                catch
                 {
                     allTypes = new List<long>();
                 }
                 ((ComboBox)sender).ItemsSource = allTypes;
             }
         }
-
     }
 }
