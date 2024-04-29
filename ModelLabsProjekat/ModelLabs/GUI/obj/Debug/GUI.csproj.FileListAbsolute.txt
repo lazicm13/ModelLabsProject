@@ -2,15 +2,8 @@ C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\Mod
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\GUI.exe
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\GUI.pdb
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.Common.dll
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.Services.NetworkModelService.dll
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\NMSTestClient.exe
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.DataModel.dll
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.dll
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.Common.pdb
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.Services.NetworkModelService.pdb
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\NMSTestClient.pdb
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\NMSTestClient.exe.config
-C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.DataModel.pdb
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\bin\Debug\FTN.ServiceContracts.ServiceContracts.NetworkModelQueryContract.pdb
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
 C:\Users\HP EliteBook 840-G2\Desktop\Faks\4. GODINA\Modeli podataka\Projekat\ModelLabsProject\ModelLabsProjekat\ModelLabs\GUI\obj\Debug\MainWindow.g.cs

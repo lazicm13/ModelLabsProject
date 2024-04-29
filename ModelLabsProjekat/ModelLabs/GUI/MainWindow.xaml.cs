@@ -13,270 +13,327 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using TelventDMS.Services.NetworkModelService.TestClient.Tests;
 
-namespace GUI
+namespace UI
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<long> allTypes;
-        private const string noFilterMsg = "No filter";
-        private TestGda tgda;
+        #region Fields
+
+        private GDA gda;
+        private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
+        private Dictionary<ModelCode, string> propertiesDesc = new Dictionary<ModelCode, string>();
+        private Dictionary<ModelCode, string> propertiesDescExtended = new Dictionary<ModelCode, string>();
+        private Dictionary<ModelCode, string> propertiesDescRelated = new Dictionary<ModelCode, string>();
+
+        private List<long> longGids = new List<long>();
+        private long selectedGID = -1;
+        private long selectedDMSType = -1;
+        private long selectedGIDRelated = -1;
+        private long selectedRelProp = -1;
+
+        #endregion
 
         public MainWindow()
         {
-            IntializeTestGda();
             InitializeComponent();
-        }
-
-        private void IntializeTestGda()
-        {
-            allTypes = null;
-            tgda = new TestGda();
-        }
-
-
-        #region GetValues
-
-        private void comboBoxIdSelect_Initialized(object sender, EventArgs e)
-        {
-            GetAllTypes(sender);
-        }
-
-        private void listBoxProperties_Initialized(object sender, EventArgs e)
-        {
-            if (comboBoxIdSelect.Items.Count != 0)
-                comboBoxIdSelect.SelectedItem = comboBoxIdSelect.Items[0];
-        }
-
-        private void comboBoxIdSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ModelResourcesDesc modelResources = new ModelResourcesDesc();
-            ModelCode type = modelResources.GetModelCodeFromId((long)comboBoxIdSelect.SelectedItem);
-
-            listBoxProperties.ItemsSource = modelResources.GetAllPropertyIds(type);
-            listBoxProperties.UnselectAll();
-        }
-
-        private void btnGetValues_Click(object sender, RoutedEventArgs e)
-        {
-            if (comboBoxIdSelect.Items.Count == 0)
-                return;
-
-            List<ModelCode> props = new List<ModelCode>();
-            foreach (var prop in listBoxProperties.SelectedItems)
-            {
-                props.Add((ModelCode)prop);
-            }
-
-            txtBlockOutput.Text = tgda.GetValues((long)comboBoxIdSelect.SelectedItem, props);
-        }
-
-        #endregion GetValues
-
-
-        #region GetExtentValues
-
-        private void comboBoxModelSelect_Initialized(object sender, EventArgs e)
-        {
-            List<ModelCode> modelCodes = new List<ModelCode>();
-
-            foreach (DMSType type in Enum.GetValues(typeof(DMSType))) //depends on DMSType and ModelCode having the same string name, mozda iskoristi GetModelCodeFromType
-            {
-                CommonTrace.WriteTrace(true, typeof(DMSType).ToString());
-                if (type == DMSType.MASK_TYPE)
-                    continue;
-
-                modelCodes.Add((ModelCode)Enum.Parse(typeof(ModelCode), type.ToString()));
-            }
-
-            comboBoxModelSelect.ItemsSource = modelCodes;
-        }
-
-        private void listBoxPropertiesExtent_Initialized(object sender, EventArgs e)
-        {
-            if (comboBoxModelSelect.Items.Count != 0)
-                comboBoxModelSelect.SelectedItem = comboBoxModelSelect.Items[0];
-        }
-
-        private void comboBoxModelSelect_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            ModelResourcesDesc modelResources = new ModelResourcesDesc();
-            listBoxPropertiesExtent.ItemsSource = modelResources.GetAllPropertyIds((ModelCode)comboBoxModelSelect.SelectedItem);
-            listBoxPropertiesExtent.UnselectAll();
-            
-        }
-
-        private void btnExtentValues_Click(object sender, RoutedEventArgs e)
-        {
-            if (comboBoxModelSelect.Items.Count == 0)
-                return;
-
-            List<ModelCode> props = new List<ModelCode>();
-            foreach (var prop in listBoxPropertiesExtent.SelectedItems)
-            {
-                props.Add((ModelCode)prop);
-            }
-
-            txtBlockOutput.Text = tgda.GetExtentValues((ModelCode)comboBoxModelSelect.SelectedItem, props);
-        }
-
-        #endregion GetExtentValues
-
-
-        #region GetRelatedValues
-
-        private void comboBoxIdSelectRelated_Initialized(object sender, EventArgs e)
-        {
-            GetAllTypes(sender);
-        }
-
-        private void comboBoxSelectAssType_Initialized(object sender, EventArgs e)
-        {
-            //comboBoxIdSelectRelated.SelectionChanged += comboBoxIdSelectRelated_SelectionChanged;
-            if (comboBoxIdSelectRelated.Items.Count != 0)
-                comboBoxIdSelectRelated.SelectedItem = comboBoxIdSelectRelated.Items[0];
-        }
-
-        private void comboBoxSelectAssFilter_Initialized(object sender, EventArgs e)
-        {
-            List<string> modelCodes = new List<string>();
-            modelCodes.Add(noFilterMsg);
-
-            
-            foreach (DMSType type in Enum.GetValues(typeof(DMSType))) //depends on DMSType and ModelCode having the same string name, mozda iskoristi GetModelCodeFromType
-            {
-                if (type == DMSType.MASK_TYPE)
-                    continue;
-
-                modelCodes.Add(type.ToString());
-            }
-
-            comboBoxSelectAssFilter.ItemsSource = modelCodes;
-        }
-
-        private void listBoxPropertiesRelated_Initialized(object sender, EventArgs e)
-        {
-            if (comboBoxSelectAssFilter.Items.Count != 0)
-                comboBoxSelectAssFilter.SelectedItem = comboBoxSelectAssFilter.Items[0];
-        }
-
-        private void comboBoxIdSelectRelated_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            // Vrednosti model kodova
-            var source = Enum.GetValues(typeof(ModelCode));
-
-            ModelResourcesDesc modelResources = new ModelResourcesDesc();
-
-            // Model kod za izabrani gid
-            ModelCode modelCode = modelResources.GetModelCodeFromId((long)comboBoxIdSelectRelated.SelectedItem);
-
-            // Heksadecimalna vrednost model koda za izabrani gid
-            string concreteType = ((long)modelCode).ToString("x");
-
-            // Lista model kodova koji imaju referencu na nas gid
-            List<string> sourceString = new List<string>();
-            foreach (ModelCode s in source)
-            {
-                // Heksadecimalna vrednost trenutnog model koda
-                string temp = s.ToString("x");
-                if (tgda.ModelCodeStringCompareHelper(concreteType, temp))      // provera da li je poslednji broj 9
-                    sourceString.Add(temp);     // Ako je 9 (referenca), dodaj u listu
-            }
-
-            List<ModelCode> codes = new List<ModelCode>();
-            foreach (string s in sourceString)
-            {
-                // Pretvoreni stringovi u heksadecimalne brojeve
-                codes.Add((ModelCode)long.Parse(s, System.Globalization.NumberStyles.HexNumber));
-            }
-
-            // Smestamo model kodove objekata koji referenciraju izabrani gid u komboboks
-            comboBoxSelectAssType.ItemsSource = codes;
-            if (comboBoxSelectAssType.Items.Count != 0)
-                comboBoxSelectAssType.SelectedItem = comboBoxSelectAssType.Items[0];
-        }
-
-        private void comboBoxSelectAssFilter_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            List<ModelCode> props = new List<ModelCode>();
-
-            ModelResourcesDesc modelResources = new ModelResourcesDesc();
-            if (comboBoxSelectAssFilter.SelectedItem.ToString() == noFilterMsg)
-            {
-                foreach (ModelCode code in Enum.GetValues(typeof(ModelCode)))
-                {
-                    // Sve propertije postavljamo u listu model kodova
-                    props.AddRange(modelResources.GetAllPropertyIds(code));
-                    props = props.Distinct().ToList();      // izbacujemo duplikate
-                }
-            }
-            else
-            {
-                // Uzimamo samo propertije filtera
-                props = modelResources.GetAllPropertyIds((ModelCode)Enum.Parse(typeof(ModelCode), comboBoxSelectAssFilter.SelectedItem.ToString()));
-            }
-
-            listBoxPropertiesRelated.ItemsSource = props;
-        }
-
-        private void btnGetRelatedValues_Click(object sender, RoutedEventArgs e)
-        {
-            if (comboBoxSelectAssType.Items.Count == 0)
-                return;
-
-            Association ass = new Association();
-
-            ass.PropertyId = (ModelCode)comboBoxSelectAssType.SelectedItem;
-            if (comboBoxSelectAssFilter.SelectedItem.ToString() == noFilterMsg)
-                ass.Type = 0;
-            else
-                ass.Type = (ModelCode)Enum.Parse(typeof(ModelCode), comboBoxSelectAssFilter.SelectedItem.ToString());
-
-            List<ModelCode> props = new List<ModelCode>();
-            foreach (var prop in listBoxPropertiesRelated.SelectedItems)
-            {
-                props.Add((ModelCode)prop);
-            }
 
             try
             {
-                txtBlockOutput.Text = tgda.GetRelatedValues((long)comboBoxIdSelectRelated.SelectedItem, ass, props);
+                gda = new GDA();
             }
-            catch (ArgumentException ex)
+            catch (Exception ex)
             {
-                MessageBox.Show("Selected properties do not match found instances.\nAdditional message:" + ex.Message, "Incorrect querry",
-                    MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show(ex.Message, "GDA Exception", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            int count = 0;
+            foreach (DMSType dmsType in Enum.GetValues(typeof(DMSType)))
+            {
+                if (dmsType == DMSType.MASK_TYPE)
+                    continue;
+                count++;
+                ModelCode dmsTypesModelCode = modelResourcesDesc.GetModelCodeFromType(dmsType);
+                CommonTrace.WriteTrace(true, dmsTypesModelCode.ToString());
+
+                DMSTypes.Items.Add(dmsTypesModelCode);
+                gda.GetExtentValues(dmsTypesModelCode, new List<ModelCode> { ModelCode.IDOBJ_GID }, null).ForEach(g => longGids.Add(g));
             }
 
+            if (longGids.Count > 0)
+            {
+                longGids.ForEach(g =>
+                {
+                    GIDs.Items.Add(string.Format("{0:X16}", g));
+                    GIDsRelated.Items.Add(string.Format("{0:X16}", g));
+                });
+            }
+            else
+                CommonTrace.WriteTrace(true, $"Nije ucitan nijedan Gid u longGids, {count}");
+
+            selectedGID = -1;
+            selectedDMSType = -1;
+        }
+
+        #region Populate properties
+
+        private void PopulateProperties(StackPanel propertiesPanel, Dictionary<ModelCode, string> propContainer, DMSType type)
+        {
+            if ((long)type == -1)
+                return;
+
+            propertiesPanel.Children.Clear();
+
+            List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds(type);
+
+            propContainer.Clear();
+
+            foreach (ModelCode property in properties)
+            {
+                propContainer.Add(property, property.ToString());
+
+                var checkBox = new CheckBox()
+                {
+                    Content = string.Format("{0:X}", property.ToString()),
+                };
+
+                propertiesPanel.Children.Add(checkBox);
+            }
+        }
+
+        #endregion
+
+        #region Values tab
+
+        private void GIDs_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            //long.TryParse(GIDs.SelectedItem.ToString(), out selectedGID);
+            selectedGID = longGids[GIDs.SelectedIndex];
+            var type = ModelCodeHelper.ExtractTypeFromGlobalId(selectedGID);
+            PopulateProperties(Properties, propertiesDesc, (DMSType)type);
+        }
+
+        private void Button_Click_GetValues(object sender, RoutedEventArgs e)
+        {
+            if (selectedGID == -1)
+                return;
+
+            List<ModelCode> selectedProperties = new List<ModelCode>();
+
+            foreach (var child in Properties.Children)
+            {
+                if (!(child is CheckBox checkBox))
+                    continue;
+                if (!checkBox.IsChecked.Value)
+                    continue;
+
+                foreach (KeyValuePair<ModelCode, string> keyValuePair in propertiesDesc)
+                {
+                    if (keyValuePair.Value.Equals(checkBox.Content))
+                        selectedProperties.Add(keyValuePair.Key);
+                }
+            }
+
+            ResourceDescription rd = null;
+            try
+            {
+                rd = gda.GetValues(selectedGID, selectedProperties);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "GetValues", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            if (rd == null)
+                return;
+
+            var sb = new StringBuilder();
+            sb.Append("Returned entity" + Environment.NewLine + Environment.NewLine);
+            sb.Append($"Entity with gid: 0x{rd.Id:X16}" + Environment.NewLine);
+
+            foreach (Property property in rd.Properties)
+            {
+                switch (property.Type)
+                {
+                    case PropertyType.Int64:
+                        StringAppend.AppendLong(sb, property);
+                        break;
+                    case PropertyType.Float:
+                        StringAppend.AppendFloat(sb, property);
+                        break;
+                    case PropertyType.String:
+                        StringAppend.AppendString(sb, property);
+                        break;
+                    case PropertyType.Reference:
+                        StringAppend.AppendReference(sb, property);
+                        break;
+                    case PropertyType.ReferenceVector:
+                        StringAppend.AppendReferenceVector(sb, property);
+                        break;
+                    case PropertyType.DateTime:
+                        StringAppend.AppendDateTime(sb, property);
+                        break;
+
+                    default:
+                        sb.Append($"\t{property.Id}: {property.PropertyValue.LongValue}{Environment.NewLine}");
+                        break;
+                }
+            }
+
+            Values.Clear();
+            Values.AppendText(sb.ToString());
+        }
+
+        #endregion
+
+        #region ExtentValues tab
+
+        private void DMSTypes_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            selectedDMSType = (long)DMSTypes.SelectedItem;
+            PopulateProperties(PropertiesExtent, propertiesDescExtended, ModelCodeHelper.GetTypeFromModelCode((ModelCode)selectedDMSType));
+        }
+
+        private void Button_Click_GetExtentValues(object sender, RoutedEventArgs e)
+        {
+            if (selectedDMSType == -1)
+                return;
+
+            List<ModelCode> selectedProperties = new List<ModelCode>();
+
+            foreach (var child in PropertiesExtent.Children)
+            {
+                if (!(child is CheckBox checkBox))
+                    continue;
+                if (!checkBox.IsChecked.Value)
+                    continue;
+
+                foreach (KeyValuePair<ModelCode, string> keyValuePair in propertiesDescExtended)
+                {
+                    if (keyValuePair.Value.Equals(checkBox.Content))
+                        selectedProperties.Add(keyValuePair.Key);
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Returned entities" + Environment.NewLine + Environment.NewLine);
+
+            try
+            {
+                gda.GetExtentValues((ModelCode)selectedDMSType, selectedProperties, sb);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "GetValues", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
+            ValuesExtent.Clear();
+            ValuesExtent.AppendText(sb.ToString());
+        }
+
+        #endregion
+
+        #region RelatedValues tab
+
+        private void RelatedGIDs_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            RelationalProps.Items.Clear();
+            RelationalTypes.Items.Clear();
+            PropertiesRelated.Children.Clear();
+
+            selectedGIDRelated = longGids[GIDsRelated.SelectedIndex];
+            short type = ModelCodeHelper.ExtractTypeFromGlobalId(selectedGIDRelated);
+            List<ModelCode> properties = modelResourcesDesc.GetAllPropertyIds((DMSType)type);
+
+            foreach (ModelCode property in properties)
+            {
+                var prop = new Property(property);
+                if (prop.Type != PropertyType.Reference && prop.Type != PropertyType.ReferenceVector)
+                    continue;
+
+                RelationalProps.Items.Add(property);
+            }
+        }
+
+        private void RelationalProps_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (RelationalProps.SelectedItem == null)
+                return;
+
+            RelationalTypes.Items.Clear();
+
+            selectedRelProp = (long)RelationalProps.SelectedItem;
+
+            var targetEntity = GetTypeFromReferenceModelCode(selectedRelProp);
+
+            RelationalTypes.Items.Add(targetEntity);
+
+            PopulateProperties(PropertiesRelated, propertiesDescRelated, targetEntity);
         }
 
 
-        #endregion GetRelatedValues
-
-
-
-        private void GetAllTypes(object sender)
+        private DMSType GetTypeFromReferenceModelCode(long modelCode)
         {
-            if (allTypes != null)
+            var rd = gda.GetValues(selectedGIDRelated, new List<ModelCode>() { (ModelCode)modelCode });
+            var prop = rd.GetProperty((ModelCode)modelCode);
+
+            long gid = -1;
+            if (prop.IsCompatibleWith(PropertyType.ReferenceVector))
             {
-                ((ComboBox)sender).ItemsSource = allTypes;
+                if (prop.AsReferences().Count > 0)
+                    gid = prop.AsReferences()[0];
             }
             else
             {
-                try
-                {
-                    allTypes = tgda.TestGetExtentValuesAllTypes();
-                }
-                catch
-                {
-                    allTypes = new List<long>();
-                }
-                ((ComboBox)sender).ItemsSource = allTypes;
+                gid = prop.AsReference();
             }
+
+            if (gid == -1)
+                return DMSType.MASK_TYPE;
+
+            var targetEntity = (DMSType)ModelCodeHelper.ExtractTypeFromGlobalId(gid);
+            return targetEntity;
         }
+
+        private void Button_Click_GetRelatedValues(object sender, RoutedEventArgs e)
+        {
+            if (selectedRelProp == -1)
+                return;
+
+            List<ModelCode> selectedProperties = new List<ModelCode>();
+
+            foreach (var child in PropertiesRelated.Children)
+            {
+                if (child is CheckBox checkBox && checkBox.IsChecked.Value)
+                {
+                    foreach (KeyValuePair<ModelCode, string> keyValuePair in propertiesDescRelated)
+                    {
+                        if (keyValuePair.Value.Equals(checkBox.Content))
+                        {
+                            selectedProperties.Add(keyValuePair.Key);
+                        }
+                    }
+                }
+            }
+
+            StringBuilder sb = new StringBuilder();
+            sb.Append("Returned entities" + Environment.NewLine + Environment.NewLine);
+
+            // Property is of reference type, but value not set so skip it.
+            var type = GetTypeFromReferenceModelCode(selectedRelProp);
+            if (type == DMSType.MASK_TYPE)
+                return;
+
+            var association = new Association((ModelCode)selectedRelProp, modelResourcesDesc.GetModelCodeFromType(type));
+            List<long> gids = gda.GetRelatedValues(selectedGIDRelated, selectedProperties, association, sb);
+
+            ValuesRelated.Clear();
+            ValuesRelated.AppendText(sb.ToString());
+        }
+
+        #endregion
+
     }
 }
