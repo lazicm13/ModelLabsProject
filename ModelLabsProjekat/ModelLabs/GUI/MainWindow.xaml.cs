@@ -29,7 +29,7 @@ namespace UI
         private Dictionary<ModelCode, string> propertiesDescExtended = new Dictionary<ModelCode, string>();
         private Dictionary<ModelCode, string> propertiesDescRelated = new Dictionary<ModelCode, string>();
 
-        private List<long> longGids = new List<long>();
+        private static List<long> longGids = new List<long>();
         private long selectedGID = -1;
         private long selectedDMSType = -1;
         private long selectedGIDRelated = -1;
@@ -53,13 +53,19 @@ namespace UI
             foreach (DMSType dmsType in Enum.GetValues(typeof(DMSType)))
             {
                 if (dmsType == DMSType.MASK_TYPE)
-                    continue;
+                continue;
+                try
+                {
+                    ModelCode dmsTypesModelCode = modelResourcesDesc.GetModelCodeFromType(dmsType);
+                    CommonTrace.WriteTrace(true, dmsTypesModelCode.ToString());
+                    DMSTypes.Items.Add(dmsTypesModelCode);
+                    gda.GetExtentValues(dmsTypesModelCode, new List<ModelCode> { ModelCode.IDOBJ_GID }, null).ForEach(g => longGids.Add(g));
+                }catch(Exception e)
+                {
+                    CommonTrace.WriteTrace(true, e.Message + e.StackTrace);
+                    throw new Exception();
+                }
                 count++;
-                ModelCode dmsTypesModelCode = modelResourcesDesc.GetModelCodeFromType(dmsType);
-                CommonTrace.WriteTrace(true, dmsTypesModelCode.ToString());
-
-                DMSTypes.Items.Add(dmsTypesModelCode);
-                gda.GetExtentValues(dmsTypesModelCode, new List<ModelCode> { ModelCode.IDOBJ_GID }, null).ForEach(g => longGids.Add(g));
             }
 
             if (longGids.Count > 0)
@@ -109,7 +115,7 @@ namespace UI
 
         private void GIDs_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //long.TryParse(GIDs.SelectedItem.ToString(), out selectedGID);
+            long.TryParse(GIDs.SelectedItem.ToString(), out selectedGID);
             selectedGID = longGids[GIDs.SelectedIndex];
             var type = ModelCodeHelper.ExtractTypeFromGlobalId(selectedGID);
             PopulateProperties(Properties, propertiesDesc, (DMSType)type);

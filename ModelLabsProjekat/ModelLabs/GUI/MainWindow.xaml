@@ -5,41 +5,46 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UI"
         mc:Ignorable="d"
-        Title="ModelLabs" Height="486" Width="899">
+        Title="ModelLabs" Height="486" Width="899" >
     <Grid>
         <TabControl Margin="0,0,-1,-2">
-            <TabItem Header="Values">
-                <Grid Margin="0,-5,0,-7">
+            <TabItem Header="Values" Background="Beige">
+                <Grid Margin="0,-5,0,-7" Background="Beige">
                     <Label Content="GID:" Margin="20,28,727,373" RenderTransformOrigin="0.47,-0.38"/>
                     <ComboBox Name="GIDs" HorizontalAlignment="Left" Margin="63,30,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="GIDs_SelectionChanged"/>
                     <Label Content="Properties:" Margin="20,75,694,330" RenderTransformOrigin="0.47,-0.38"/>
                     <StackPanel Name="Properties" Margin="30,106,473,31"/>
-                    <Button Content="GetValues >" HorizontalAlignment="Left" Margin="340,212,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.52,0.775" Click="Button_Click_GetValues"/>
-                    <TextBox Name="Values" Margin="458,29,18,29" TextWrapping="Wrap" Text=""/>
+                    <Button Content="GetValues ->" HorizontalAlignment="Left" Margin="340,212,0,0" VerticalAlignment="Top" Width="74" RenderTransformOrigin="0.52,0.775" Click="Button_Click_GetValues"/>
+                    <TextBox Name="Values" Margin="458,29,18,29" TextWrapping="Wrap" Text="" />
                 </Grid>
             </TabItem>
-            <TabItem Header="ExtentValues">
-                <Grid Margin="0,-5,0,-7">
+            <TabItem Header="ExtentValues" Background="Azure">
+                <Grid Margin="0,-5,0,-7" Background="Azure">
                     <Label Content="DMSType:" Margin="20,28,688,370" RenderTransformOrigin="0.47,-0.38"/>
                     <ComboBox Name="DMSTypes" HorizontalAlignment="Left" Margin="111,29,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="DMSTypes_SelectionChanged"/>
                     <Label Content="Properties:" Margin="20,75,694,315" RenderTransformOrigin="0.47,-0.38"/>
                     <StackPanel Name="PropertiesExtent" Margin="30,106,473,31"/>
-                    <Button Content="GetExtentValues >" HorizontalAlignment="Left" Margin="332,212,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.52,0.775" Click="Button_Click_GetExtentValues"/>
+                    <Button Content="GetExtentValues ->" HorizontalAlignment="Left" Margin="332,212,0,0" VerticalAlignment="Top" Width="104" RenderTransformOrigin="0.52,0.775" Click="Button_Click_GetExtentValues"/>
                     <TextBox Name="ValuesExtent" Margin="458,29,18,29" TextWrapping="Wrap" Text=""/>
                 </Grid>
             </TabItem>
-            <TabItem Header="RelatedValues">
-                <Grid Margin="0,-5,0,-7">
-                    <Label Content="GID:" Margin="20,24,722,381" RenderTransformOrigin="0.47,-0.38"/>
-                    <ComboBox Name="GIDsRelated" HorizontalAlignment="Left" Margin="147,28,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="RelatedGIDs_SelectionChanged"/>
-                    <Label Content="References:" Margin="19,62,641,337" RenderTransformOrigin="0.47,-0.38"/>
-                    <ComboBox Name="RelationalProps" HorizontalAlignment="Left" Margin="147,66,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="RelationalProps_SelectionChanged"/>
-                    <Label Content="Related Type:" Margin="20,98,640,300" RenderTransformOrigin="0.47,-0.38"/>
-                    <ListBox Name="RelationalTypes" HorizontalAlignment="Left" Margin="147,102,0,0" VerticalAlignment="Top" Width="198" Height="22"/>
-                    <Label Content="Properties:" Margin="20,138,639,265" RenderTransformOrigin="0.47,-0.38"/>
-                    <StackPanel Name="PropertiesRelated" Margin="30,169,473,31"/>
-                    <TextBox Name="ValuesRelated" Margin="458,29,18,29" TextWrapping="Wrap" Text=""/>
-                    <Button Content="GetRelatedValues >" HorizontalAlignment="Left" Margin="325,212,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.52,0.775" Click="Button_Click_GetRelatedValues"/>
+            <TabItem Header="RelatedValues" Background="CadetBlue">
+                <Grid Margin="0,-5,0,-7" Background="CadetBlue">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="23*"/>
+                        <ColumnDefinition Width="125*"/>
+                        <ColumnDefinition Width="739*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="GID:" Margin="20,24,721.667,381" RenderTransformOrigin="0.47,-0.38" Grid.ColumnSpan="3"/>
+                    <ComboBox Name="GIDsRelated" HorizontalAlignment="Left" Margin="124.333,28,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="RelatedGIDs_SelectionChanged" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="References:" Margin="19,62,640.667,337" RenderTransformOrigin="0.47,-0.38" Grid.ColumnSpan="3"/>
+                    <ComboBox Name="RelationalProps" HorizontalAlignment="Left" Margin="124.333,66,0,0" VerticalAlignment="Top" Width="198" SelectionChanged="RelationalProps_SelectionChanged" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Related Type:" Margin="20,98,639.667,300" RenderTransformOrigin="0.47,-0.38" Grid.ColumnSpan="3"/>
+                    <ListBox Name="RelationalTypes" HorizontalAlignment="Left" Margin="124.333,102,0,0" VerticalAlignment="Top" Width="198" Height="22" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <Label Content="Properties:" Margin="20,138,638.667,265" RenderTransformOrigin="0.47,-0.38" Grid.ColumnSpan="3"/>
+                    <StackPanel Name="PropertiesRelated" Margin="7.333,169,472.667,31" Grid.ColumnSpan="2" Grid.Column="1"/>
+                    <TextBox Name="ValuesRelated" Margin="310,29,17.667,29" TextWrapping="Wrap" Text="" Grid.Column="2"/>
+                    <Button Content="GetRelatedValues ->" HorizontalAlignment="Left" Margin="177,212,0,0" VerticalAlignment="Top" Width="116" RenderTransformOrigin="0.52,0.775" Click="Button_Click_GetRelatedValues" Grid.Column="2"/>
                 </Grid>
             </TabItem>
         </TabControl>

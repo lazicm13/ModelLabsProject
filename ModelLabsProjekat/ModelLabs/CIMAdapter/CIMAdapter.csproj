@@ -108,6 +108,7 @@
       <Name>NetworkModelGDAContract</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Lib\PowerTransformerCIMProfile_Labs.dll" />
   </ItemGroup>

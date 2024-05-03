@@ -870,8 +870,8 @@ namespace FTN.Common
 			typeIdsInInsertOrder.Add(ModelCode.LINE);
 			typeIdsInInsertOrder.Add(ModelCode.SERIES_COMPENSATOR);
 			typeIdsInInsertOrder.Add(ModelCode.DC_LINE_SEGMENT);
-			typeIdsInInsertOrder.Add(ModelCode.AC_LINE_SEGMENT);
 			typeIdsInInsertOrder.Add(ModelCode.PER_LENGTH_SEQ_IMPEDANCE);
+			typeIdsInInsertOrder.Add(ModelCode.AC_LINE_SEGMENT);
 		}
 
 		private void InitializeNotSettablePropertyIds()

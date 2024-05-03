@@ -186,6 +186,7 @@
 					}
 					rd.AddProperty(new Property(ModelCode.AC_LINE_SEGMENT_PERLENGTHIMP, gid));
 				}
+
 			}
 		}
 

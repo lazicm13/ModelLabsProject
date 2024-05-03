@@ -67,7 +67,7 @@ namespace UI
 		public List<long> GetExtentValues(ModelCode modelCodeType, List<ModelCode> properties, StringBuilder sb)
 		{
 			var message = "Getting extent values method started.";
-			CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+			CommonTrace.WriteTrace(true, message);
 
 			int iteratorId;
 			int resourcesLeft;
@@ -128,12 +128,12 @@ namespace UI
 				GdaQueryProxy.IteratorClose(iteratorId);
 
 				message = "Getting extent values method successfully finished.";
-				CommonTrace.WriteTrace(CommonTrace.TraceError, message);
+				CommonTrace.WriteTrace(true, message);
 			}
 			catch (Exception e)
 			{
 				message = string.Format("Getting extent values method failed for {0}.\n\t{1}", modelCodeType, e.Message);
-				CommonTrace.WriteTrace(CommonTrace.TraceError, message + e.StackTrace);
+				CommonTrace.WriteTrace(true, message + e.StackTrace);
 			}
 
 			if (sb != null)
